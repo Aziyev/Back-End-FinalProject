@@ -230,6 +230,10 @@ body {
 .home-all-mehsullar .mehsullar .mehsul {
   margin: 5px;
 }
+    .home-all-mehsullar .mehsullar .mehsul a {
+        text-decoration:none;
+        color:black;
+    }
 .home-all-mehsullar .mehsullar .mehsul .mehsul-box {
   background-color: white;
   border-radius: 5px;

@@ -12,8 +12,15 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
+#nullable restore
+#line 2 "C:\Users\aziye\Desktop\Back-End-FinalProject\WorldTelecomFinalProj\WorldTelecomFinalProj\Views\_ViewImports.cshtml"
+using WorldTelecomFinalProj.Models;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"167a83f8913d7e91fc31c73b96d64ecdf779c5ef", @"/Views/blog/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a9af4978b9c2bfca24ef48e96efe5f8573634464", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"75e9ef6752317ee23c3b1eb96346a181325047ab", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views_blog_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     #nullable disable
@@ -54,7 +61,7 @@ namespace AspNetCore
 #line hidden
 #nullable disable
             WriteLiteral("\r\n  <div class=\"section\">\r\n        <div class=\"container\">\r\n            <div class=\"blog-box\">\r\n               <div class=\"bloq-box-1\">\r\n                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "167a83f8913d7e91fc31c73b96d64ecdf779c5ef3937", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "167a83f8913d7e91fc31c73b96d64ecdf779c5ef4169", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
