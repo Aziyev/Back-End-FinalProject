@@ -1,0 +1,28 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+.container{
+    margin: auto;
+    padding: 0px 24px;
+    max-width: 1280px;
+}
+.pbtn{
+    cursor: pointer;
+    color: #1d1d1b;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+.container2{
+    margin: auto;
+    padding: 0px 24px;
+    padding-left: 140px;
+    max-width: 1280px;
+    
+}
+.row{
+    position: sticky;
+}
