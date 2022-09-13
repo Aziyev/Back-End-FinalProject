@@ -10,14 +10,6 @@ namespace WorldTelecomFinalProj.Controllers
 {
     public class MehsulController : Controller
     {
-        private readonly AppDbContext _context;
-        public MehsulController(AppDbContext context) 
-        {
-            _context = context;
-        }
-        public async Task<IActionResult> Index()
-        {
-            return View(await _context.Products.ToListAsync());
-        }
+      
     }
 }

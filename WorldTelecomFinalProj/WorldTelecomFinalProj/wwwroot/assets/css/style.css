@@ -225,20 +225,20 @@ body {
 }
 .home-all-mehsullar .mehsullar {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .home-all-mehsullar .mehsullar .mehsul {
   margin: 5px;
 }
-    .home-all-mehsullar .mehsullar .mehsul a {
+ .home-all-mehsullar .mehsullar .mehsul a {
         text-decoration:none;
         color:black;
-    }
+ }
 .home-all-mehsullar .mehsullar .mehsul .mehsul-box {
   background-color: white;
   border-radius: 5px;
   width: 100%;
-  padding: 5px;
+  padding: 5px 0px;
   border: 1px solid rgb(194, 194, 194);
 }
 .home-all-mehsullar .mehsullar .mehsul .mehsul-box .mehsul-box-img {
