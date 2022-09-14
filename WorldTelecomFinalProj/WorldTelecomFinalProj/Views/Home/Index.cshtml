@@ -318,7 +318,7 @@
                                     @foreach (Product product in Model)
                             {
                                     <div class="mehsul col-lg-3">
-                                        <a asp-controller="mehsul" asp-action="index" asp-route-id="@product.Id">
+                                        <a asp-controller="product" asp-action="index">
                                             <div class="mehsul-box">
                                             <div class="mehsul-box-img">
                                                 <div class="card-cash">
@@ -332,7 +332,7 @@
                                                 <div class="card-favori" >
                                                     <img src="~/assets/img/svgexport-22.svg" alt="" class="dddddd" onclick="chBackcolor('red')">
                                                 </div>
-                                                <img src="~/assets/img/Mehsullarjpg/@product.MainImage" alt="mehsulun sekili">
+                                                <img src="~/assets/img/productjpg/apple/@product.MainImage" alt="mehsulun sekili">
                                             </div>
                                             <div class="mehsul-box-bottom">
                                                 <div class="mehsul-categorie-name">

@@ -32,24 +32,30 @@ header{
     }
     .h-bottom-color{
         background-color:#383E42;
+        width: 100%;
         .h-bottom{
             display: flex;
             justify-content: space-between;
             .category{
                 
                 display: flex;
-               padding: 24px 15px;
+               
                width: 90px;
                 button{
-                    width: 40px;
-                    height: 40px;
+                    
                     background: none;
                     border: none;
                     text-align: center;
                     color:white;
                     font-size: 10px;
                     svg{
-                        margin-left: 15px;
+                        margin-top:auto;
+                        margin-bottom:auto;
+                        display:block;
+                    }
+                    img{
+                        width: 40px;
+                        height: 40px;
                     }
                 }
                 
@@ -63,9 +69,14 @@ header{
                padding: 15px;
                margin-left: 20px;
                .search-box{
-               
+                form{
+                    background-color:white;
+                    border-radius: 5px;
+
+                }
+               display: inline;
                width: 100%;
-               background-color:white;
+               
                border-radius: 5px;
                input{
                 width: 80%;
@@ -133,18 +144,46 @@ header{
                     .ico2{
                         padding: 4px 0px;
                     }
-                    svg{
+                    img{
                         margin: 0px 10px;
                     }
                 }
             }
         }
         }
-        margin-bottom: 20px;
+        
 }
 body{
     background-color:#F2F2F2;
 }
+
+/* 
+.mobile-header1{
+    margin: 0px;
+    display: flex;
+    padding: 10px 0px;
+    justify-content: space-between;
+    .mhleft{
+        padding-left: 20px;
+        img{
+            width: 120px;
+            height: 24px;
+        }
+    }
+    .mhright{
+        padding-left: 20px;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        background-color:#8DC63F;
+        padding: 5px 20px;
+    }
+}
+
+.mobile-header2{
+    background-color: #272b2e;
+} */
 
 .home-all-top{
     display: flex;
@@ -214,7 +253,7 @@ body{
                         background-color:rgb(221, 255, 221);
                     }
                     
-                    svg{
+                    img{
                         width: 22px!important;
                         height: 24px!important;
                     }
@@ -246,8 +285,12 @@ body{
     }
     .mehsullar{
         display: flex;
-        justify-content: space-between;
         
+        flex-wrap: wrap;
+        .mehsulunlinki{
+            text-decoration: none;
+            color:black;
+        }
         .mehsul{
             margin:5px;
             
@@ -255,7 +298,7 @@ body{
                 background-color:white;
                 border-radius:5px;
                 width: 100%;
-                padding: 5px;
+                padding: 5px 0px;
                 border:1px solid rgb(194, 194, 194);
 
                 .mehsul-box-img{
@@ -274,7 +317,7 @@ body{
                             }
                         position: relative;
                         top: -35px;
-                        left: -45px;
+                        left: -40px;
 
                         }
                         .card-cash-discount{
@@ -383,7 +426,7 @@ body{
         width: 100%;
         
         a{
-            padding: 0px 15px;
+            padding: 0px 10px;
         }
         img{
             width: 112px;
@@ -813,6 +856,7 @@ position: relative;
 
 footer{
     background-color:#383E42;
+    
     .footerall{
         padding: 20px 0px;
         display: flex;
@@ -825,15 +869,16 @@ footer{
                         text-decoration: none;
                         color: white;
                         span{
-                            font-size: 17px;
+                            font-size: 16px;
                             font-weight: 600;
                             padding: 5px 2px;
                             color: white;
                         }
                     }
-                    svg{
-                        width: 30px;
+                    img{
+                        width: 25px;
                         padding: 0px;
+                        
                     }
                     div{
                         .footerlogo{
@@ -848,6 +893,10 @@ footer{
                     }
                 }
             }
+        }
+        #footerlogoo{
+            width: 165px;
+            height: 50px;
         }
         .footer-right{
             display: flex;

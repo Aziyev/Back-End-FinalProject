@@ -107,12 +107,7 @@ C:\Users\aziye\Desktop\Back-End-FinalProject\WorldTelecomFinalProj\WorldTelecomF
 C:\Users\aziye\Desktop\Back-End-FinalProject\WorldTelecomFinalProj\WorldTelecomFinalProj\obj\Debug\netcoreapp3.1\Razor\Views\Korporativ\Index.cshtml.g.cs
 C:\Users\aziye\Desktop\Back-End-FinalProject\WorldTelecomFinalProj\WorldTelecomFinalProj\obj\Debug\netcoreapp3.1\Razor\Views\blog\Index.cshtml.g.cs
 C:\Users\aziye\Desktop\Back-End-FinalProject\WorldTelecomFinalProj\WorldTelecomFinalProj\obj\Debug\netcoreapp3.1\Razor\Views\Giris\Index.cshtml.g.cs
-C:\Users\aziye\Desktop\Back-End-FinalProject\WorldTelecomFinalProj\WorldTelecomFinalProj\obj\Debug\netcoreapp3.1\Razor\Views\Kampaniyalar\Index.cshtml.g.cs
 C:\Users\aziye\Desktop\Back-End-FinalProject\WorldTelecomFinalProj\WorldTelecomFinalProj\obj\Debug\netcoreapp3.1\Razor\Views\Magazalar\Index.cshtml.g.cs
-C:\Users\aziye\Desktop\Back-End-FinalProject\WorldTelecomFinalProj\WorldTelecomFinalProj\obj\Debug\netcoreapp3.1\Razor\Views\Mehsul\Index.cshtml.g.cs
-C:\Users\aziye\Desktop\Back-End-FinalProject\WorldTelecomFinalProj\WorldTelecomFinalProj\obj\Debug\netcoreapp3.1\Razor\Views\Mehsullar\Index.cshtml.g.cs
-C:\Users\aziye\Desktop\Back-End-FinalProject\WorldTelecomFinalProj\WorldTelecomFinalProj\obj\Debug\netcoreapp3.1\Razor\Views\Sebet\Index.cshtml.g.cs
-C:\Users\aziye\Desktop\Back-End-FinalProject\WorldTelecomFinalProj\WorldTelecomFinalProj\obj\Debug\netcoreapp3.1\Razor\Views\Sevimliler\Index.cshtml.g.cs
 C:\Users\aziye\Desktop\Back-End-FinalProject\WorldTelecomFinalProj\WorldTelecomFinalProj\obj\Debug\netcoreapp3.1\Razor\Views\Vakansiya\Index.cshtml.g.cs
 C:\Users\aziye\Desktop\Back-End-FinalProject\WorldTelecomFinalProj\WorldTelecomFinalProj\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\aziye\Desktop\Back-End-FinalProject\WorldTelecomFinalProj\WorldTelecomFinalProj\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
@@ -153,3 +148,8 @@ C:\Users\aziye\Desktop\Back-End-FinalProject\WorldTelecomFinalProj\WorldTelecomF
 C:\Users\aziye\Desktop\Back-End-FinalProject\WorldTelecomFinalProj\WorldTelecomFinalProj\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\aziye\Desktop\Back-End-FinalProject\WorldTelecomFinalProj\WorldTelecomFinalProj\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\aziye\Desktop\Back-End-FinalProject\WorldTelecomFinalProj\WorldTelecomFinalProj\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\aziye\Desktop\Back-End-FinalProject\WorldTelecomFinalProj\WorldTelecomFinalProj\obj\Debug\netcoreapp3.1\Razor\Views\Basket\Index.cshtml.g.cs
+C:\Users\aziye\Desktop\Back-End-FinalProject\WorldTelecomFinalProj\WorldTelecomFinalProj\obj\Debug\netcoreapp3.1\Razor\Views\Companies\Index.cshtml.g.cs
+C:\Users\aziye\Desktop\Back-End-FinalProject\WorldTelecomFinalProj\WorldTelecomFinalProj\obj\Debug\netcoreapp3.1\Razor\Views\Favorites\Index.cshtml.g.cs
+C:\Users\aziye\Desktop\Back-End-FinalProject\WorldTelecomFinalProj\WorldTelecomFinalProj\obj\Debug\netcoreapp3.1\Razor\Views\Products\Index.cshtml.g.cs
+C:\Users\aziye\Desktop\Back-End-FinalProject\WorldTelecomFinalProj\WorldTelecomFinalProj\obj\Debug\netcoreapp3.1\Razor\Views\Product\Index.cshtml.g.cs

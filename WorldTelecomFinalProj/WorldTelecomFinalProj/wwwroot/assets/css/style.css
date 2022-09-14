@@ -1,6 +1,3 @@
-header {
-  margin-bottom: 20px;
-}
 header .h-top {
   padding: 8px 0px;
   display: flex;
@@ -31,6 +28,7 @@ header .h-top .h-top-right ul li a {
 }
 header .h-bottom-color {
   background-color: #383E42;
+  width: 100%;
 }
 header .h-bottom-color .h-bottom {
   display: flex;
@@ -38,12 +36,9 @@ header .h-bottom-color .h-bottom {
 }
 header .h-bottom-color .h-bottom .category {
   display: flex;
-  padding: 24px 15px;
   width: 90px;
 }
 header .h-bottom-color .h-bottom .category button {
-  width: 40px;
-  height: 40px;
   background: none;
   border: none;
   text-align: center;
@@ -51,7 +46,13 @@ header .h-bottom-color .h-bottom .category button {
   font-size: 10px;
 }
 header .h-bottom-color .h-bottom .category button svg {
-  margin-left: 15px;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: block;
+}
+header .h-bottom-color .h-bottom .category button img {
+  width: 40px;
+  height: 40px;
 }
 header .h-bottom-color .h-bottom .category:hover {
   background-color: #272b2e;
@@ -63,7 +64,11 @@ header .h-bottom-color .h-bottom .search1 {
   margin-left: 20px;
 }
 header .h-bottom-color .h-bottom .search1 .search-box {
+  display: inline;
   width: 100%;
+  border-radius: 5px;
+}
+header .h-bottom-color .h-bottom .search1 .search-box form {
   background-color: white;
   border-radius: 5px;
 }
@@ -129,7 +134,7 @@ header .h-bottom-color .h-bottom .companies .companies-icons .ico1 .drop2 .qeydi
 header .h-bottom-color .h-bottom .companies .companies-icons .ico2 {
   padding: 4px 0px;
 }
-header .h-bottom-color .h-bottom .companies .companies-icons svg {
+header .h-bottom-color .h-bottom .companies .companies-icons img {
   margin: 0px 10px;
 }
 
@@ -137,6 +142,33 @@ body {
   background-color: #F2F2F2;
 }
 
+/* 
+.mobile-header1{
+    margin: 0px;
+    display: flex;
+    padding: 10px 0px;
+    justify-content: space-between;
+    .mhleft{
+        padding-left: 20px;
+        img{
+            width: 120px;
+            height: 24px;
+        }
+    }
+    .mhright{
+        padding-left: 20px;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        background-color:#8DC63F;
+        padding: 5px 20px;
+    }
+}
+
+.mobile-header2{
+    background-color: #272b2e;
+} */
 .home-all-top {
   display: flex;
 }
@@ -201,7 +233,7 @@ body {
 .home-all-top .home-left ul li .categorie-item .item-top:hover {
   background-color: rgb(221, 255, 221);
 }
-.home-all-top .home-left ul li .categorie-item svg {
+.home-all-top .home-left ul li .categorie-item img {
   width: 22px !important;
   height: 24px !important;
 }
@@ -227,13 +259,13 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+.home-all-mehsullar .mehsullar .mehsulunlinki {
+  text-decoration: none;
+  color: black;
+}
 .home-all-mehsullar .mehsullar .mehsul {
   margin: 5px;
 }
- .home-all-mehsullar .mehsullar .mehsul a {
-        text-decoration:none;
-        color:black;
- }
 .home-all-mehsullar .mehsullar .mehsul .mehsul-box {
   background-color: white;
   border-radius: 5px;
@@ -256,7 +288,7 @@ body {
 .home-all-mehsullar .mehsullar .mehsul .mehsul-box .mehsul-box-img .card-cash .card-cash-img {
   position: relative;
   top: -35px;
-  left: -45px;
+  left: -40px;
 }
 .home-all-mehsullar .mehsullar .mehsul .mehsul-box .mehsul-box-img .card-cash .card-cash-img img {
   width: 100px;
@@ -356,7 +388,7 @@ body {
   margin-bottom: 20px;
 }
 .partnyorlar .partnyorlar-box a {
-  padding: 0px 15px;
+  padding: 0px 10px;
 }
 .partnyorlar .partnyorlar-box img {
   width: 112px;
@@ -754,13 +786,13 @@ footer .footerall .footer-left ul li a {
   color: white;
 }
 footer .footerall .footer-left ul li a span {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 600;
   padding: 5px 2px;
   color: white;
 }
-footer .footerall .footer-left ul li svg {
-  width: 30px;
+footer .footerall .footer-left ul li img {
+  width: 25px;
   padding: 0px;
 }
 footer .footerall .footer-left ul li div .footerlogo {
@@ -770,6 +802,10 @@ footer .footerall .footer-left ul li div .footerlogo {
 footer .footerall .footer-left ul li div span {
   font-size: 16px;
   color: white;
+}
+footer .footerall #footerlogoo {
+  width: 165px;
+  height: 50px;
 }
 footer .footerall .footer-right {
   display: flex;
