@@ -1,0 +1,12 @@
+﻿@model List<Product>
+
+    @foreach (Product product in Model)
+   {
+       <li  class="list-group-item" style="display:flex; list-style-type:none; padding:5px; color:black; border:1px solid black; width:88%; height:auto; border-radius:5px; background-color:white;">
+                   
+        <img src="assets/img/productjpg/@product.MainImage" style="width:60px" />
+                    
+        <p style="margin-top:auto; margin-bottom:auto; display:block;">@product.Name</p>
+
+    </li>
+   }

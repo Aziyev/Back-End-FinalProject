@@ -1,0 +1,87 @@
+﻿@model Product
+@{
+    ViewData["Title"] = "Index";
+}
+
+<section>
+        <div class="container">
+            <div class="product-box">
+                <div class="product-box-text">
+                    <h2>@Model.Name</h2>
+                </div>
+                <div class="product col-lg-12">
+                    <div class="product-left col-lg-9"> 
+                        <div class="pl-top">
+                            <div class="pl-img">
+                                <img src="~/assets/img/productjpg/@Model.MainImage" alt="mehsul">
+                            </div>
+                            <div class="pl-inf">
+                                <div class="stokinf">
+                                    <p class="fweight">#Teglər</p>
+                                    <div class="stokinf-btn">
+                                        <div class="stokda-var">
+                                        @if (Model.Count > 0)
+                                        {
+                                            <p>Stokda var</p>
+                                        }
+                                        else
+                                        {
+                                            <p>Stokda Yoxdur!</p>
+                                        }
+                                        
+                                        </div>
+                                        <div class="catdirilma">
+                                            <p>Pulsuz Catdirilma</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="color-inf">
+                                    <div class="color-inf-text">
+                                        <p>Reng</p>
+                                    </div>
+                                    <div class="color-choose">
+                                        <div class="product-color color1"></div>
+                                        <div class="product-color color2"></div>
+                                        <div class="product-color color3"></div>
+                                        <div class="product-color color4"></div>
+                                    </div>
+                                </div>
+                                <div class="memory">
+                                    <div class="memory-text">
+                                        <p>Daxili yaddaş</p>
+                                    </div>
+                                    <div class="memory-choose">
+                                        <div class="memory1">
+                                            <p>@Model.Momery</p>
+                                        </div>
+                                        <div class="memory2">
+                                            <p>@Model.Momery</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pl-inf-bottom">
+                                    <div class="wp-sifarish">
+                                        <img src="~/assets/img/wp.svg" alt="">
+                                        <p>Whatsapp ilə <br> sifaris</p>
+                                    </div>
+                                    <div class="add-to-basket">
+                                        <img src="~/assets/img/svgexport-27.svg" alt="">
+                                        <p>Sebete elave et</p>
+                                    </div>
+                                    <div class="add-to-favorit">
+                                        <img src="~/assets/img/svgexport-22.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pl-bottom">
+                            
+                        </div>
+                    </div>
+                    <div class="product-right col-lg-3">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
