@@ -172,12 +172,12 @@
     }
 }
 
-@media (max-width: 1250px){
+/*@media (max-width: 1250px){*/
 /* header{
   display: none;
 }
  */
- .search-box button{
+ /*.search-box button{
   display: none;
  }
  header .h-top{
@@ -186,5 +186,5 @@
  header .h-bottom-color{
   display: none;
  }
-}
+}*/
 

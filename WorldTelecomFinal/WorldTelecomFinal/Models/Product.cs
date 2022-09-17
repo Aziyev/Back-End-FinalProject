@@ -20,18 +20,18 @@ namespace WorldTelecomFinal.Models
         public int Count { get; set; }
         [StringLength(maximumLength: 255)]
         public string MainImage { get; set; }
-        public int IsAviable { get; set; }
         public int BrandId { get; set; }
         [Range(0, 9999)]
 
 
         //Elave xarakteristikalar
+        public string Color { get; set; }
         public int Code { get; set; }
-        public int Screen { get; set; }
-        public int RAM { get; set; }
-        public int CPU { get; set; }
-        public int Weight { get; set; }
-        public int Momery { get; set; }
+        public string Screen { get; set; }
+        public string RAM { get; set; }
+        public string CPU { get; set; }
+        public string Weight { get; set; }
+        public string Momery { get; set; }
 
         public Brand Brand { get; set; }
         public IEnumerable<ProductTag> ProductsTags { get; set; }

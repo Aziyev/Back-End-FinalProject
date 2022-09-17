@@ -33,6 +33,12 @@ namespace WorldTelecomFinal
             });
             services.AddDbContext<AppDbContext>(options=>options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
+            services.AddSession(options=>
+            {
+                options.IdleTimeout = TimeSpan.FromSeconds(5);
+            }
+                );
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -43,8 +49,12 @@ namespace WorldTelecomFinal
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseSession();
+
             app.UseRouting();
+
             app.UseStaticFiles();
+
 
             app.UseEndpoints(endpoints =>
             {
