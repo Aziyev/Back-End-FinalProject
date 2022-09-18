@@ -1,0 +1,219 @@
+.mobile-header-section{
+    display: none;
+    z-index: 9999;
+    margin-bottom: 10px;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+.mobile-header1{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.mobile-header1 a{
+    text-decoration: none;
+    color: black;
+    padding: 5px 30px;
+    font-size: 12px;
+    background-color: green;
+    border-radius: 10px;
+    color: white;
+
+}
+.mhright{
+    margin-top: 5px;
+}
+.mobile-header2{
+    background-color: #383E42;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.mobile-header2 .mhlogo{
+    width: 132px;
+    height: 30px;
+}
+.mhlogo{
+    padding-top: 5px;
+}
+.mhicons{
+    padding-top: 5px;
+}
+.mhicons img{
+   width: 24px;
+   height: 24px;
+}
+.mobilebar{
+    padding-top: 5px;
+}
+
+
+
+
+/* ---------------------- */
+
+.overlay-top{
+    background-color:#383E42 ;
+}
+.mh-overlay-content{
+  width: 100%;
+  display: flex;
+  padding: 16px;
+  flex-wrap: wrap;
+  background-color: #f0f0f0;
+}
+.item-top-bottom{
+  border-radius: 4px;
+    width: 45%;
+    height: 168px;
+    background-color: #fff;
+    border: 0.4px solid #dadada;
+    padding: 18px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 8px;
+}
+.item-bottom{
+  text-align: center;
+}
+
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: white; /* Black fallback color */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 0%; /* 25% from the top */
+    width: 100%; /* 100% width */ /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+  
+  /* The navigation links inside the overlay */
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: black;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+
+  }
+  .mf-display-prop{
+    display:none;
+  }
+  .mobile-footter-icons{
+    width: 30px;
+    height: 30px;
+  }
+  .mobile-footer{
+    
+    padding: 20px;
+    background-color: #383E42;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .mobile-footer a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    width: 100%;
+  }
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+  @media screen and (max-height: 1290px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+
+
+
+
+  
+@media (max-width: 1250px){
+  /* header{
+    display: none;
+  }
+   */
+   header{ 
+    display: none;
+   }
+   footer{
+    display: none;
+   }
+   .home-left{
+    display: none;
+   }
+   .home-all-top{
+    display: block;
+    flex-wrap: wrap;
+  }
+  .slideshow-container{
+    width: 100%;
+  }
+  .partnyorlar {
+    overflow:scroll;
+    background-color: none;
+    border-radius: 10px;
+  }
+  .partnyorlar .partnyorlar-box{
+    background-color: #F2F2F2;
+    border:none;
+  }
+  .mobile-header-section{
+    display: block !important;
+  }
+  .container{
+    padding: 0px;
+  }
+  
+  .home-right{
+    width: 100%;
+    margin-left: 0px !important;
+  }
+  
+  .mf-display-prop{
+    display:block !important;
+  }
+  
+  
+  
+  }
+  
+  @media (min-width: 1530px){
+    .categorymodal{
+      top: 168px;
+      left: 335px;
+    }
+  }
