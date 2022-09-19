@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@{
+    List<BasketVM> basketVMs = new List<BasketVM>();
+}
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -103,9 +107,11 @@
                             <a asp-controller="favorites" asp-action="index"><div class="ico2">
                                 <img src="~/assets/img/header-icons/lovewhite.svg" alt="">
                             </div></a>
-                            <a asp-controller="basket" asp-action="index"><div class="ico3">
+                            <a asp-controller="basket" asp-action="index">
+                                <div class="ico3">
                                 <img src="~/assets/img/header-icons/basketwhite.svg" alt="">
-                            </div></a>
+                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
