@@ -67,12 +67,27 @@ $(document).ready(function () {
 
 
     //------------How To Add Product To Basket--------------------------
-    $('.gotobasket').click(function (e) {
+    $('.addbasket').click(function (e) {
         e.preventDefault();
 
         let url = $(this).attr('href');
-        fetch(url).then(res => res.text()).then(data => {
-              
-        })
+
+        fetch(url).then(res => res.text()).then(data =>
+        {
+            $('.dropdowna-contenta').html(data);
+        });
+    })
+
+    $(document).on('click', 'DeleteFromBasket', function (e) {
+        e.preventDefault();
+
+        let url = $(this).attr('href');
+        console.log(url);
+
+        fetch(url)
+            .then(res => res.text())
+            .then(data => {
+                $('.dropdowna-contenta')
+            })
     })
 })

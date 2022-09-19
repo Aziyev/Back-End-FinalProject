@@ -19,8 +19,15 @@ using WorldTelecomFinal.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\aziye\Desktop\Back-End-FinalProject\WorldTelecomFinal\WorldTelecomFinal\Views\_ViewImports.cshtml"
+using WorldTelecomFinal.ViewModels.BasketViewModels;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e0bd3bc4051ef1da009fca1f2afad5108c7dab70", @"/Views/Markets/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"397321cabbeb726f59339fd8f95c9959353c7d98", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"90e931d5b66f79a56d7af08f265a192b2f32c45f", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views_Markets_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     #nullable disable
@@ -75,7 +82,7 @@ using WorldTelecomFinal.Models;
                         <div class=""xeritede-bax-text"">
                             <a href=""#"">Xəritədə bax</a>
                             <a href=""#"">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e0bd3bc4051ef1da009fca1f2afad5108c7dab704645", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e0bd3bc4051ef1da009fca1f2afad5108c7dab704886", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -101,7 +108,7 @@ using WorldTelecomFinal.Models;
                         <div class=""xeritede-bax-text"">
                             <a href=""#"">Xəritədə bax</a>
                             <a href=""#"">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e0bd3bc4051ef1da009fca1f2afad5108c7dab706254", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e0bd3bc4051ef1da009fca1f2afad5108c7dab706495", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -127,88 +134,7 @@ using WorldTelecomFinal.Models;
                         <div class=""xeritede-bax-text"">
                             <a href=""#"">Xəritədə bax</a>
                             <a href=""#"">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e0bd3bc4051ef1da009fca1f2afad5108c7dab707863", async() => {
-            }
-            );
-            __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
-            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
-            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
-            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_1);
-            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
-            if (!__tagHelperExecutionContext.Output.IsContentModified)
-            {
-                await __tagHelperExecutionContext.SetOutputContentAsync();
-            }
-            Write(__tagHelperExecutionContext.Output);
-            __tagHelperExecutionContext = __tagHelperScopeManager.End();
-            WriteLiteral(@"</a>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-            <div class=""markets-body"">
-                <div class=""markets-box"">
-                    <h3>“Nərimanov 1” filialı</h3>
-                    <p>Təbriz küçəsi 95 (“N. Nərimanov” m/s)</p>
-                    <p>*2555</p>
-                    <div class=""xeritede-bax"">
-                        <div class=""xeritede-bax-text"">
-                            <a href=""#"">Xəritədə bax</a>
-                            <a href=""#"">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e0bd3bc4051ef1da009fca1f2afad5108c7dab709552", async() => {
-            }
-            );
-            __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
-            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
-            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
-            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_1);
-            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
-            if (!__tagHelperExecutionContext.Output.IsContentModified)
-            {
-                await __tagHelperExecutionContext.SetOutputContentAsync();
-            }
-            Write(__tagHelperExecutionContext.Output);
-            __tagHelperExecutionContext = __tagHelperScopeManager.End();
-            WriteLiteral(@"</a>
-                        </div>
-                    </div>
-                </div>
-                <div class=""markets-box"">
-                    <h3>“Nərimanov 1” filialı</h3>
-                    <p>Təbriz küçəsi 95 (“N. Nərimanov” m/s)</p>
-                    <p>*2555</p>
-                    <div class=""xeritede-bax"">
-                        <div class=""xeritede-bax-text"">
-                            <a href=""#"">Xəritədə bax</a>
-                            <a href=""#"">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e0bd3bc4051ef1da009fca1f2afad5108c7dab7011161", async() => {
-            }
-            );
-            __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
-            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
-            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
-            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_1);
-            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
-            if (!__tagHelperExecutionContext.Output.IsContentModified)
-            {
-                await __tagHelperExecutionContext.SetOutputContentAsync();
-            }
-            Write(__tagHelperExecutionContext.Output);
-            __tagHelperExecutionContext = __tagHelperScopeManager.End();
-            WriteLiteral(@"</a>
-                        </div>
-                    </div>
-                </div>
-                <div class=""markets-box"">
-                    <h3>“Nərimanov 1” filialı</h3>
-                    <p>Təbriz küçəsi 95 (“N. Nərimanov” m/s)</p>
-                    <p>*2555</p>
-                    <div class=""xeritede-bax"">
-                        <div class=""xeritede-bax-text"">
-                            <a href=""#"">Xəritədə bax</a>
-                            <a href=""#"">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e0bd3bc4051ef1da009fca1f2afad5108c7dab7012771", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e0bd3bc4051ef1da009fca1f2afad5108c7dab708104", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -237,7 +163,7 @@ using WorldTelecomFinal.Models;
                         <div class=""xeritede-bax-text"">
                             <a href=""#"">Xəritədə bax</a>
                             <a href=""#"">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e0bd3bc4051ef1da009fca1f2afad5108c7dab7014461", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e0bd3bc4051ef1da009fca1f2afad5108c7dab709793", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -263,7 +189,7 @@ using WorldTelecomFinal.Models;
                         <div class=""xeritede-bax-text"">
                             <a href=""#"">Xəritədə bax</a>
                             <a href=""#"">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e0bd3bc4051ef1da009fca1f2afad5108c7dab7016071", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e0bd3bc4051ef1da009fca1f2afad5108c7dab7011402", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -289,88 +215,7 @@ using WorldTelecomFinal.Models;
                         <div class=""xeritede-bax-text"">
                             <a href=""#"">Xəritədə bax</a>
                             <a href=""#"">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e0bd3bc4051ef1da009fca1f2afad5108c7dab7017681", async() => {
-            }
-            );
-            __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
-            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
-            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
-            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_1);
-            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
-            if (!__tagHelperExecutionContext.Output.IsContentModified)
-            {
-                await __tagHelperExecutionContext.SetOutputContentAsync();
-            }
-            Write(__tagHelperExecutionContext.Output);
-            __tagHelperExecutionContext = __tagHelperScopeManager.End();
-            WriteLiteral(@"</a>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-            <div class=""markets-body"">
-                <div class=""markets-box"">
-                    <h3>“Nərimanov 1” filialı</h3>
-                    <p>Təbriz küçəsi 95 (“N. Nərimanov” m/s)</p>
-                    <p>*2555</p>
-                    <div class=""xeritede-bax"">
-                        <div class=""xeritede-bax-text"">
-                            <a href=""#"">Xəritədə bax</a>
-                            <a href=""#"">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e0bd3bc4051ef1da009fca1f2afad5108c7dab7019371", async() => {
-            }
-            );
-            __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
-            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
-            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
-            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_1);
-            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
-            if (!__tagHelperExecutionContext.Output.IsContentModified)
-            {
-                await __tagHelperExecutionContext.SetOutputContentAsync();
-            }
-            Write(__tagHelperExecutionContext.Output);
-            __tagHelperExecutionContext = __tagHelperScopeManager.End();
-            WriteLiteral(@"</a>
-                        </div>
-                    </div>
-                </div>
-                <div class=""markets-box"">
-                    <h3>“Nərimanov 1” filialı</h3>
-                    <p>Təbriz küçəsi 95 (“N. Nərimanov” m/s)</p>
-                    <p>*2555</p>
-                    <div class=""xeritede-bax"">
-                        <div class=""xeritede-bax-text"">
-                            <a href=""#"">Xəritədə bax</a>
-                            <a href=""#"">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e0bd3bc4051ef1da009fca1f2afad5108c7dab7020981", async() => {
-            }
-            );
-            __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
-            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
-            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
-            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_1);
-            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
-            if (!__tagHelperExecutionContext.Output.IsContentModified)
-            {
-                await __tagHelperExecutionContext.SetOutputContentAsync();
-            }
-            Write(__tagHelperExecutionContext.Output);
-            __tagHelperExecutionContext = __tagHelperScopeManager.End();
-            WriteLiteral(@"</a>
-                        </div>
-                    </div>
-                </div>
-                <div class=""markets-box"">
-                    <h3>“Nərimanov 1” filialı</h3>
-                    <p>Təbriz küçəsi 95 (“N. Nərimanov” m/s)</p>
-                    <p>*2555</p>
-                    <div class=""xeritede-bax"">
-                        <div class=""xeritede-bax-text"">
-                            <a href=""#"">Xəritədə bax</a>
-                            <a href=""#"">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e0bd3bc4051ef1da009fca1f2afad5108c7dab7022591", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e0bd3bc4051ef1da009fca1f2afad5108c7dab7013012", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -399,7 +244,7 @@ using WorldTelecomFinal.Models;
                         <div class=""xeritede-bax-text"">
                             <a href=""#"">Xəritədə bax</a>
                             <a href=""#"">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e0bd3bc4051ef1da009fca1f2afad5108c7dab7024281", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e0bd3bc4051ef1da009fca1f2afad5108c7dab7014702", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -425,7 +270,7 @@ using WorldTelecomFinal.Models;
                         <div class=""xeritede-bax-text"">
                             <a href=""#"">Xəritədə bax</a>
                             <a href=""#"">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e0bd3bc4051ef1da009fca1f2afad5108c7dab7025891", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e0bd3bc4051ef1da009fca1f2afad5108c7dab7016312", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -451,88 +296,7 @@ using WorldTelecomFinal.Models;
                         <div class=""xeritede-bax-text"">
                             <a href=""#"">Xəritədə bax</a>
                             <a href=""#"">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e0bd3bc4051ef1da009fca1f2afad5108c7dab7027501", async() => {
-            }
-            );
-            __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
-            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
-            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
-            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_1);
-            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
-            if (!__tagHelperExecutionContext.Output.IsContentModified)
-            {
-                await __tagHelperExecutionContext.SetOutputContentAsync();
-            }
-            Write(__tagHelperExecutionContext.Output);
-            __tagHelperExecutionContext = __tagHelperScopeManager.End();
-            WriteLiteral(@"</a>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-            <div class=""markets-body"">
-                <div class=""markets-box"">
-                    <h3>“Nərimanov 1” filialı</h3>
-                    <p>Təbriz küçəsi 95 (“N. Nərimanov” m/s)</p>
-                    <p>*2555</p>
-                    <div class=""xeritede-bax"">
-                        <div class=""xeritede-bax-text"">
-                            <a href=""#"">Xəritədə bax</a>
-                            <a href=""#"">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e0bd3bc4051ef1da009fca1f2afad5108c7dab7029191", async() => {
-            }
-            );
-            __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
-            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
-            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
-            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_1);
-            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
-            if (!__tagHelperExecutionContext.Output.IsContentModified)
-            {
-                await __tagHelperExecutionContext.SetOutputContentAsync();
-            }
-            Write(__tagHelperExecutionContext.Output);
-            __tagHelperExecutionContext = __tagHelperScopeManager.End();
-            WriteLiteral(@"</a>
-                        </div>
-                    </div>
-                </div>
-                <div class=""markets-box"">
-                    <h3>“Nərimanov 1” filialı</h3>
-                    <p>Təbriz küçəsi 95 (“N. Nərimanov” m/s)</p>
-                    <p>*2555</p>
-                    <div class=""xeritede-bax"">
-                        <div class=""xeritede-bax-text"">
-                            <a href=""#"">Xəritədə bax</a>
-                            <a href=""#"">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e0bd3bc4051ef1da009fca1f2afad5108c7dab7030801", async() => {
-            }
-            );
-            __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
-            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
-            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
-            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_1);
-            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
-            if (!__tagHelperExecutionContext.Output.IsContentModified)
-            {
-                await __tagHelperExecutionContext.SetOutputContentAsync();
-            }
-            Write(__tagHelperExecutionContext.Output);
-            __tagHelperExecutionContext = __tagHelperScopeManager.End();
-            WriteLiteral(@"</a>
-                        </div>
-                    </div>
-                </div>
-                <div class=""markets-box"">
-                    <h3>“Nərimanov 1” filialı</h3>
-                    <p>Təbriz küçəsi 95 (“N. Nərimanov” m/s)</p>
-                    <p>*2555</p>
-                    <div class=""xeritede-bax"">
-                        <div class=""xeritede-bax-text"">
-                            <a href=""#"">Xəritədə bax</a>
-                            <a href=""#"">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e0bd3bc4051ef1da009fca1f2afad5108c7dab7032411", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e0bd3bc4051ef1da009fca1f2afad5108c7dab7017922", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -561,7 +325,7 @@ using WorldTelecomFinal.Models;
                         <div class=""xeritede-bax-text"">
                             <a href=""#"">Xəritədə bax</a>
                             <a href=""#"">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e0bd3bc4051ef1da009fca1f2afad5108c7dab7034101", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e0bd3bc4051ef1da009fca1f2afad5108c7dab7019612", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -587,7 +351,7 @@ using WorldTelecomFinal.Models;
                         <div class=""xeritede-bax-text"">
                             <a href=""#"">Xəritədə bax</a>
                             <a href=""#"">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e0bd3bc4051ef1da009fca1f2afad5108c7dab7035711", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e0bd3bc4051ef1da009fca1f2afad5108c7dab7021222", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -613,7 +377,7 @@ using WorldTelecomFinal.Models;
                         <div class=""xeritede-bax-text"">
                             <a href=""#"">Xəritədə bax</a>
                             <a href=""#"">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e0bd3bc4051ef1da009fca1f2afad5108c7dab7037321", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e0bd3bc4051ef1da009fca1f2afad5108c7dab7022832", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -642,7 +406,7 @@ using WorldTelecomFinal.Models;
                         <div class=""xeritede-bax-text"">
                             <a href=""#"">Xəritədə bax</a>
                             <a href=""#"">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e0bd3bc4051ef1da009fca1f2afad5108c7dab7039011", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e0bd3bc4051ef1da009fca1f2afad5108c7dab7024522", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -668,7 +432,7 @@ using WorldTelecomFinal.Models;
                         <div class=""xeritede-bax-text"">
                             <a href=""#"">Xəritədə bax</a>
                             <a href=""#"">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e0bd3bc4051ef1da009fca1f2afad5108c7dab7040621", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e0bd3bc4051ef1da009fca1f2afad5108c7dab7026132", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -694,7 +458,250 @@ using WorldTelecomFinal.Models;
                         <div class=""xeritede-bax-text"">
                             <a href=""#"">Xəritədə bax</a>
                             <a href=""#"">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e0bd3bc4051ef1da009fca1f2afad5108c7dab7042231", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e0bd3bc4051ef1da009fca1f2afad5108c7dab7027742", async() => {
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_1);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            WriteLiteral(@"</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class=""markets-body"">
+                <div class=""markets-box"">
+                    <h3>“Nərimanov 1” filialı</h3>
+                    <p>Təbriz küçəsi 95 (“N. Nərimanov” m/s)</p>
+                    <p>*2555</p>
+                    <div class=""xeritede-bax"">
+                        <div class=""xeritede-bax-text"">
+                            <a href=""#"">Xəritədə bax</a>
+                            <a href=""#"">");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e0bd3bc4051ef1da009fca1f2afad5108c7dab7029432", async() => {
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_1);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            WriteLiteral(@"</a>
+                        </div>
+                    </div>
+                </div>
+                <div class=""markets-box"">
+                    <h3>“Nərimanov 1” filialı</h3>
+                    <p>Təbriz küçəsi 95 (“N. Nərimanov” m/s)</p>
+                    <p>*2555</p>
+                    <div class=""xeritede-bax"">
+                        <div class=""xeritede-bax-text"">
+                            <a href=""#"">Xəritədə bax</a>
+                            <a href=""#"">");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e0bd3bc4051ef1da009fca1f2afad5108c7dab7031042", async() => {
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_1);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            WriteLiteral(@"</a>
+                        </div>
+                    </div>
+                </div>
+                <div class=""markets-box"">
+                    <h3>“Nərimanov 1” filialı</h3>
+                    <p>Təbriz küçəsi 95 (“N. Nərimanov” m/s)</p>
+                    <p>*2555</p>
+                    <div class=""xeritede-bax"">
+                        <div class=""xeritede-bax-text"">
+                            <a href=""#"">Xəritədə bax</a>
+                            <a href=""#"">");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e0bd3bc4051ef1da009fca1f2afad5108c7dab7032652", async() => {
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_1);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            WriteLiteral(@"</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class=""markets-body"">
+                <div class=""markets-box"">
+                    <h3>“Nərimanov 1” filialı</h3>
+                    <p>Təbriz küçəsi 95 (“N. Nərimanov” m/s)</p>
+                    <p>*2555</p>
+                    <div class=""xeritede-bax"">
+                        <div class=""xeritede-bax-text"">
+                            <a href=""#"">Xəritədə bax</a>
+                            <a href=""#"">");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e0bd3bc4051ef1da009fca1f2afad5108c7dab7034342", async() => {
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_1);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            WriteLiteral(@"</a>
+                        </div>
+                    </div>
+                </div>
+                <div class=""markets-box"">
+                    <h3>“Nərimanov 1” filialı</h3>
+                    <p>Təbriz küçəsi 95 (“N. Nərimanov” m/s)</p>
+                    <p>*2555</p>
+                    <div class=""xeritede-bax"">
+                        <div class=""xeritede-bax-text"">
+                            <a href=""#"">Xəritədə bax</a>
+                            <a href=""#"">");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e0bd3bc4051ef1da009fca1f2afad5108c7dab7035952", async() => {
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_1);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            WriteLiteral(@"</a>
+                        </div>
+                    </div>
+                </div>
+                <div class=""markets-box"">
+                    <h3>“Nərimanov 1” filialı</h3>
+                    <p>Təbriz küçəsi 95 (“N. Nərimanov” m/s)</p>
+                    <p>*2555</p>
+                    <div class=""xeritede-bax"">
+                        <div class=""xeritede-bax-text"">
+                            <a href=""#"">Xəritədə bax</a>
+                            <a href=""#"">");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e0bd3bc4051ef1da009fca1f2afad5108c7dab7037562", async() => {
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_1);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            WriteLiteral(@"</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class=""markets-body"">
+                <div class=""markets-box"">
+                    <h3>“Nərimanov 1” filialı</h3>
+                    <p>Təbriz küçəsi 95 (“N. Nərimanov” m/s)</p>
+                    <p>*2555</p>
+                    <div class=""xeritede-bax"">
+                        <div class=""xeritede-bax-text"">
+                            <a href=""#"">Xəritədə bax</a>
+                            <a href=""#"">");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e0bd3bc4051ef1da009fca1f2afad5108c7dab7039252", async() => {
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_1);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            WriteLiteral(@"</a>
+                        </div>
+                    </div>
+                </div>
+                <div class=""markets-box"">
+                    <h3>“Nərimanov 1” filialı</h3>
+                    <p>Təbriz küçəsi 95 (“N. Nərimanov” m/s)</p>
+                    <p>*2555</p>
+                    <div class=""xeritede-bax"">
+                        <div class=""xeritede-bax-text"">
+                            <a href=""#"">Xəritədə bax</a>
+                            <a href=""#"">");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e0bd3bc4051ef1da009fca1f2afad5108c7dab7040862", async() => {
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_1);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            WriteLiteral(@"</a>
+                        </div>
+                    </div>
+                </div>
+                <div class=""markets-box"">
+                    <h3>“Nərimanov 1” filialı</h3>
+                    <p>Təbriz küçəsi 95 (“N. Nərimanov” m/s)</p>
+                    <p>*2555</p>
+                    <div class=""xeritede-bax"">
+                        <div class=""xeritede-bax-text"">
+                            <a href=""#"">Xəritədə bax</a>
+                            <a href=""#"">");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e0bd3bc4051ef1da009fca1f2afad5108c7dab7042472", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

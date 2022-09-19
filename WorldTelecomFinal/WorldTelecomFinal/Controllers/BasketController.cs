@@ -34,13 +34,9 @@ namespace WorldTelecomFinal.Controllers
             List<BasketVM> basketVMs = null;
 
             if (basket != null)
-            {
                 basketVMs = JsonConvert.DeserializeObject<List<BasketVM>>(basket);
-            }
             else
-            {
                 basketVMs = new List<BasketVM>();
-            }
             BasketVM basketVM = new BasketVM
             {
                 ProductId = product.Id,
@@ -52,15 +48,40 @@ namespace WorldTelecomFinal.Controllers
 
             basketVMs.Add(basketVM);
 
-            basket = JsonConvert.SerializeObject(basket);
+            basket = JsonConvert.SerializeObject(basketVMs);
 
             HttpContext.Response.Cookies.Append("basket", basket);
 
-            return PartialView("_BasketPartial", basketVM);
+            return PartialView("_BasketPartial", basketVMs);
 
 
 
 
+        }
+
+        public async Task<IActionResult> DeleteFromBasket(int? id)
+        {
+            if (id == null) return BadRequest();
+
+            if (!await _context.Products.AnyAsync(p => p.Id == id)) return NotFound();
+
+            string basket = HttpContext.Request.Cookies["basket"];
+
+            if (basket ==null) return BadRequest();
+            
+            List<BasketVM> basketVMs = JsonConvert.DeserializeObject<List<BasketVM>>(basket);   
+
+            BasketVM basketVM = basketVMs.Find(b=>b.ProductId == id);
+
+            if (basketVM == null) return NotFound();
+
+            basketVMs.Remove(basketVM);
+
+            basket = JsonConvert.SerializeObject(basketVMs);
+
+            HttpContext.Response.Cookies.Append("basket", basket);
+
+            return PartialView("_BasketPartial",basketVMs);
         }
     }
 }

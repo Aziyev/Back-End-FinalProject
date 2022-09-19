@@ -19,8 +19,15 @@ using WorldTelecomFinal.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\aziye\Desktop\Back-End-FinalProject\WorldTelecomFinal\WorldTelecomFinal\Views\_ViewImports.cshtml"
+using WorldTelecomFinal.ViewModels.BasketViewModels;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4d8697b4f6248d63b8413821ad871b79782d7c12", @"/Views/Companies/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"397321cabbeb726f59339fd8f95c9959353c7d98", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"90e931d5b66f79a56d7af08f265a192b2f32c45f", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views_Companies_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     #nullable disable

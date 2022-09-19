@@ -63,22 +63,32 @@ namespace WorldTelecomFinal.Controllers
             {
                 basketVMs = new List<BasketVM>();
             }
-            BasketVM basketVM = new BasketVM
+
+            if (basketVMs.Exists(b=>b.ProductId == id))
             {
-                ProductId = product.Id,
-                Count = 0,
-                Image = product.MainImage,
-                Name = product.Name,
-                Price = product.DiscoutnPrice > 0 ? product.DiscoutnPrice : product.Price,
-            };
+                basketVMs.Find(b => b.ProductId == id).Count++;
+            }
+            else
+            {
+                BasketVM basketVM = new BasketVM
+                {
+                    ProductId = product.Id,
+                    Count = 1,
+                    Image = product.MainImage,
+                    Name = product.Name,
+                    Price = product.DiscoutnPrice > 0 ? product.DiscoutnPrice : product.Price,
+                };
+                basketVMs.Add(basketVM);
+            }
 
-            basketVMs.Add(basketVM);
 
-            basket = JsonConvert.SerializeObject(basket);
+            
+
+            basket = JsonConvert.SerializeObject(basketVMs);
 
             HttpContext.Response.Cookies.Append("basket", basket);
 
-            return PartialView("_BasketPartial", basketVM);
+            return PartialView("_BasketPartial", basketVMs);
 
 
 

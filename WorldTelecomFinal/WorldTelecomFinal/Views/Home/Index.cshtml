@@ -365,7 +365,7 @@
                                                         </div>
                                                         <!-- asp route ye +Id eelemisem! Cunnki error cixarirdi-->
                                                         <div class="gotobasket">
-                                                            <a asp-controller="basket" asp-action="AddToBasket" asp-route-Id="@product.Id">
+                                                            <a asp-controller="basket" asp-action="AddToBasket" asp-route-Id="@product.Id" class="addbasket">
                                                                 <img src="~/assets/img/basketgreen.svg">
                                                                 </a>
                                                         </div>
@@ -408,7 +408,7 @@
     </section>
 
     <aside class="categorymodal" >
-        <ul>
+        <ul class="category-modal-zindex">
             <li>
                 <div class="categorie-item">
                     <div class="item dropright">
