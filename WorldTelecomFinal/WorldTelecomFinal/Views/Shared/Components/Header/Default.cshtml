@@ -1,0 +1,193 @@
+﻿@model HeaderViewModel
+   
+
+<header>
+
+        <div class="container">
+            <div class="h-top">
+                <div>
+                    <a asp-controller="home" asp-action="index">
+                        <img width="149" height="45"  src="~/assets/img/header-icons/@Model.Settings.FirstOrDefault(s=>s.Key == "HeaderLogo").Value"/>
+                                          </a>
+                </div>
+                <div class="h-top-right">
+                    <ul>
+                        <li>
+                            <a class="pbtn" href="https://www.kapitalbank.az/cards/TaksitCards" target="_blank"><img src="">
+                                <img class="birkartpng" src="~/assets/img/@Model.Settings.FirstOrDefault(s=>s.Key == "BankKart").Value" alt="">
+                                <span>BirKart əldə edin</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a asp-controller="corporative" asp-action="index"><span>Korporativ satışlar</span>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                               <a href="" class="p-btm">Kredit ödənişi <i class="fa-solid fa-angle-down"></i></a>
+                                <div class="dropdown-content">
+                                  <a href="https://www.million.az/attributes/WorldTelecom" target="_blank">MilliÖN ilə ödəniş</a>
+                                  <a href="https://epul.az/epay/frame/1313" target="_blank">E-pul ilə ödəniş</a>
+                                  <a href="https://hesab.az/unregistered/#/direct-pay/store/wtelecom/parameters?lang=az" target="_blank">Hesab.az ilə ödəniş</a>
+                                </div>
+                              </div>
+                        </li>
+                        <li><a asp-controller="markets" asp-action="index"><span>Mağazalarımız</span></a></li>
+                        <li><a asp-controller="vacansies" asp-action="index"><span>Vakansiya</span></a></li>
+                        <li><a asp-controller="blog" asp-action="index"><span>Bloq</span></a></li>
+                        <li><a href="tel:*2555"><span class="font-bold"><strong>@Model.Settings.FirstOrDefault(s=>s.Key == "CallNumber").Value</strong></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+       
+        <div class="h-bottom-color">
+            <div class="container">
+                <div class="h-bottom">
+                    <div class="category">
+                        <button>
+                           <img src="~/assets/img/header-icons/barwhite.svg" alt="">
+                            <span>Kateqoriyalar</span>
+                        </button>
+
+                    </div>
+                    <div class="search1">
+                       <div class="search-box">
+                        <form action="#">
+                            <input type="text" data-url="http://localhost:60506/product/search" class="searchinput" placeholder="Məhsul axtar...">
+                            <button><i class="fas fa-search"></i></button>
+                        </form>
+                        <ul class="list-group" style="position:absolute;z-index:99999; width:40%;">
+                          
+                            
+                          </li>
+                          
+                        </ul>
+                     </div>
+                    </div>
+                    <div class="companies">
+                        <a asp-controller="companies" asp-action="index">
+                        <button>
+                            Kampaniyalar
+                        </button></a>
+                        <div class="companies-icons">
+                            <div class="ico1 dropdown">
+                                <img src="~/assets/img/header-icons/login1.svg" alt="">
+                                <div class="dropdown-content drop2">
+                                    <p>Daha yaxşı təkliflər üçün hesabınıza giriş edin.</p>
+                                    <a href="./giris.html"><button class="giris">  
+                                        Giris
+                                    </button></a>
+                                    <a href="./giris.html"><button class="giris">
+                                        Qeydiyyat
+                                    </button></a>
+                                  </div>
+                            </div>
+                            <a asp-controller="favorites" asp-action="index"><div class="ico2">
+                                <img src="~/assets/img/header-icons/lovewhite.svg" alt="">
+                            </div></a>
+
+
+                            <a asp-controller="basket" asp-action="index">
+                                <div class="ico3 dropdowna header-basket">
+                                
+                                 @await Html.PartialAsync("_BasketPartial",Model.BasketVMs)
+                            </div>
+                            </a>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+     <section class="mobile-header-section" id="myHeader">
+
+        <div class="mobile-header1">
+            <div class="mhleft">
+                <img src="~/assets/img/header-icons/logoblack.svg" alt="">
+            </div>
+            <div class="mhright">
+                <a href="https://play.google.com/store/apps/details?id=com.worldtelecom&hl=en">Mobil Tedbiqi Yukle</a>
+            </div>
+            </div>
+    <div class="mobile-header2">
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+            <div class="overlay-top">
+                <a href=""><img width="120px" height="34px" src="~/assets/img/header-icons/logowhite.svg" alt=""></a>
+            </div>
+            <div class="mh-overlay-content">
+                <div class="item-top-bottom">
+                    <div class="item-top">
+                        <img width="30px" height="30px" src="~/assets/img/categorie/categorie1.svg" alt="">
+                    </div>
+                    <div class="item-bottom">
+                        <span >Telefon və  planşetlər</span>
+                    </div>
+                </div>
+                <div class="item-top-bottom">
+                    <div class="item-top">
+                        <img width="30px" height="30px" src="~/assets/img/categorie/categorie1.svg" alt="">
+                    </div>
+                    <div class="item-bottom">
+                        <span >Telefon və  planşetlər</span>
+                    </div>
+                </div>
+                <div class="item-top-bottom">
+                    <div class="item-top">
+                        <img width="30px" height="30px" src="~/assets/img/categorie/categorie1.svg" alt="">
+                    </div>
+                    <div class="item-bottom">
+                        <span >Telefon və  planşetlər</span>
+                    </div>
+                </div>
+                <div class="item-top-bottom">
+                    <div class="item-top">
+                        <img width="30px" height="30px" src="~/assets/img/categorie/categorie1.svg" alt="">
+                    </div>
+                    <div class="item-bottom">
+                        <span >Telefon və  planşetlər</span>
+                    </div>
+                </div>
+                <div class="item-top-bottom">
+                    <div class="item-top">
+                        <img width="30px" height="30px" src="~/assets/img/categorie/categorie1.svg" alt="">
+                    </div>
+                    <div class="item-bottom">
+                        <span >Telefon və  planşetlər</span>
+                    </div>
+                </div>
+                <div class="item-top-bottom">
+                    <div class="item-top">
+                        <img width="30px" height="30px" src="~/assets/img/categorie/categorie1.svg" alt="">
+                    </div>
+                    <div class="item-bottom">
+                        <span >Telefon və  planşetlər</span>
+                    </div>
+                </div>
+            </div>
+            <div class="mh-overlay-bottom">
+                <a href="./korporativ.html">Korporativ satislar</a>
+                <a href="./korporativ.html">Magazalarimiz</a>
+                <a href="./korporativ.html">Bloq</a>
+                <a href="./korporativ.html">Vakansiya</a>
+            </div>
+
+            </div>
+        </div>
+        <span onclick="openNav()"><img class="mobilebar" src="~/assets/img/header-icons/barwhite.svg" alt=""></span>
+        <a href=""><img class="mhlogo" src="~/assets/img/header-icons/logowhite.svg" alt=""></a>
+        <div class="mhicons">
+            <img src="~/assets/img/header-icons/login1.svg" alt="">
+            <img src="~/assets/img/header-icons/lovewhite.svg" alt="">
+            <img src="~/assets/img/header-icons/basketwhite.svg" alt="">
+        </div>
+    </div>
+    </section>
+    
