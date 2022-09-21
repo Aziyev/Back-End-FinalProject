@@ -46,6 +46,7 @@
 }
 
 .dropdown-content a:hover {background-color: #ddd; cursor: pointer;}
+
 .dropdowna-contenta a:hover {
     background-color: #ddd;
     cursor: pointer;
@@ -62,11 +63,13 @@
     background-color: #3e8e41;
 }
 
+.home-all-top{
+    margin-top:20px !important;
+}
 
 
-
-.d-flex{
-  display: flex;
+.d-flex {
+    display: flex;
 }
 
 

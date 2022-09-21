@@ -33,17 +33,15 @@ namespace WorldTelecomFinal.Controllers
 
             List<BasketVM> basketVMs = null;
 
-            if (basket != null)
+            if (!string.IsNullOrWhiteSpace(basket))
                 basketVMs = JsonConvert.DeserializeObject<List<BasketVM>>(basket);
             else
                 basketVMs = new List<BasketVM>();
             BasketVM basketVM = new BasketVM
             {
+                //Mene yalniz Id ve Count lazimdir, diger parametrler asagida Db productdan gelir.
                 ProductId = product.Id,
-                Count = 0,
-                Image = product.MainImage,
-                Name = product.Name,
-                Price = product.DiscoutnPrice > 0 ? product.DiscoutnPrice : product.Price,
+                Count = 0
             };
 
             basketVMs.Add(basketVM);
@@ -52,10 +50,7 @@ namespace WorldTelecomFinal.Controllers
 
             HttpContext.Response.Cookies.Append("basket", basket);
 
-            return PartialView("_BasketPartial", basketVMs);
-
-
-
+            return PartialView("_BasketPartial", _getBasketItemAsync(basketVMs));
 
         }
 
@@ -67,8 +62,8 @@ namespace WorldTelecomFinal.Controllers
 
             string basket = HttpContext.Request.Cookies["basket"];
 
-            if (basket ==null) return BadRequest();
-            
+            if (string.IsNullOrWhiteSpace(basket)) return BadRequest();
+
             List<BasketVM> basketVMs = JsonConvert.DeserializeObject<List<BasketVM>>(basket);   
 
             BasketVM basketVM = basketVMs.Find(b=>b.ProductId == id);
@@ -81,7 +76,27 @@ namespace WorldTelecomFinal.Controllers
 
             HttpContext.Response.Cookies.Append("basket", basket);
 
-            return PartialView("_BasketPartial",basketVMs);
+           
+            return PartialView("_BasketPartial", _getBasketItemAsync(basketVMs));
+        }
+
+
+
+
+        //Databasede melumat deyisende melumat yenilensin diye isdifade olunur.
+        //Private olmaq sebebi colden sorgu gelmeyn qarsisin almaqdi !
+        private async Task<List<BasketVM>> _getBasketItemAsync(List<BasketVM> basketVMs)
+        {
+            foreach (BasketVM item in basketVMs)
+            {
+                Product dbProduct = await _context.Products.FirstOrDefaultAsync(p => p.Id == item.ProductId);
+
+                item.Name = dbProduct.Name;
+                item.Price = dbProduct.DiscoutnPrice > 0 ? dbProduct.DiscoutnPrice : dbProduct.Price;
+                item.Image = dbProduct.MainImage;
+            }
+
+            return basketVMs;
         }
     }
 }

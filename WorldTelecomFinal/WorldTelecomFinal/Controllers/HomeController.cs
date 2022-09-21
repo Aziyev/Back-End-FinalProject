@@ -21,6 +21,20 @@ namespace WorldTelecomFinal.Controllers
 
             //Cookie Barede Numune -1
             //HttpContext.Response.Cookies.Append("p129", "p129 Hello World Cookie!");
+            string basket = HttpContext.Request.Cookies["basket"];
+
+            List<BasketVM> basketVMs = null;
+
+            if (basket != null)
+            {
+                basketVMs = JsonConvert.DeserializeObject<List<BasketVM>>(basket);
+            }
+            else
+            {
+                basketVMs = new List<BasketVM>();
+            }
+
+            ViewBag.Basket = basketVMs;
 
             return View(await _context.Products.ToListAsync());
         }

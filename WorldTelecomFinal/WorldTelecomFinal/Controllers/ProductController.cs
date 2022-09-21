@@ -45,54 +45,6 @@ namespace WorldTelecomFinal.Controllers
             return PartialView("_SearchPartial", products);
         }
 
-        public async Task<IActionResult> AddToBasket(int? id)
-        {
-            if (id == null) return BadRequest();
-            Product product = await _context.Products.FirstOrDefaultAsync(p => p.Id == id);
-            if (product == null) return NotFound();
-
-            string basket = HttpContext.Request.Cookies["basket"];
-
-            List<BasketVM> basketVMs = null;
-
-            if (basket != null)
-            {
-                basketVMs = JsonConvert.DeserializeObject<List<BasketVM>>(basket);
-            }
-            else
-            {
-                basketVMs = new List<BasketVM>();
-            }
-
-            if (basketVMs.Exists(b=>b.ProductId == id))
-            {
-                basketVMs.Find(b => b.ProductId == id).Count++;
-            }
-            else
-            {
-                BasketVM basketVM = new BasketVM
-                {
-                    ProductId = product.Id,
-                    Count = 1,
-                    Image = product.MainImage,
-                    Name = product.Name,
-                    Price = product.DiscoutnPrice > 0 ? product.DiscoutnPrice : product.Price,
-                };
-                basketVMs.Add(basketVM);
-            }
-
-
-            
-
-            basket = JsonConvert.SerializeObject(basketVMs);
-
-            HttpContext.Response.Cookies.Append("basket", basket);
-
-            return PartialView("_BasketPartial", basketVMs);
-
-
-
-           
-        }
+       
     }
 }

@@ -66,7 +66,7 @@ $(document).ready(function () {
     })
 
 
-    //------------How To Add Product To Basket--------------------------
+   /* ------------How To Add Product To Basket--------------------------*/
     $('.addbasket').click(function (e) {
         e.preventDefault();
 
@@ -78,7 +78,7 @@ $(document).ready(function () {
         });
     })
 
-    $(document).on('click', 'DeleteFromBasket', function (e) {
+    $(document).on('click', '.deletefrombasket', function (e) {
         e.preventDefault();
 
         let url = $(this).attr('href');
@@ -87,7 +87,7 @@ $(document).ready(function () {
         fetch(url)
             .then(res => res.text())
             .then(data => {
-                $('.dropdowna-contenta')
+                $('.mini-cart').html(data);
             })
     })
 })

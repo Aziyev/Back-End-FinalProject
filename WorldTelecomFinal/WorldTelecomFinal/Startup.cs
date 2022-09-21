@@ -38,6 +38,7 @@ namespace WorldTelecomFinal
                 options.IdleTimeout = TimeSpan.FromSeconds(5);
             }
                 );
+            services.AddHttpContextAccessor();
 
         }
 
