@@ -1,4 +1,4 @@
-﻿@model List<Product>
+﻿@model HomeViewModel
 @{
     ViewData["Title"] = "Index";
 }
@@ -287,35 +287,15 @@
                 </div>
                 <div class="home-right col-lg-11">
                     
-                    <div class="slideshow-container">
-                        <div class="mySlides fade">           
-                            <img src="~/assets/img/slideshow/img1.jpg" style="width:100%">
-                        </div>
-                        <div class="mySlides fade">           
-                            <img src="~/assets/img/slideshow/img2.jpg" style="width:100%">
-                        </div>
-                        <div class="mySlides fade">           
-                            <img src="~/assets/img/slideshow/img3.jpg" style="width:100%">
-                        </div>                 
-                    </div>
-                        <div class="after-slideshow">
-                            <div class="btn-box prev" onclick="plusSlides(-1)">
-                                <a><i class="fa-solid fa-chevron-left"></i></a>
-                            </div>
-                            <div class="slideshow-mini">
-                                <!-- To be Countined -->
-                            </div>
-                            <div class="btn-box next" onclick="plusSlides(1)">
-                                <a><i class="fa-solid fa-chevron-right"></i></a>
-                            </div>
-                        </div>
+               
+                    @await Component.InvokeAsync("Slider")
 
                         <section>
                             <div class="home-all-mehsullar">
                                 <h2>Ən çox satılanlar</h2>
                                 <div class="mehsullar col-lg-12">
                                     
-                                    @foreach (Product product in Model)
+                                    @foreach (Product product in Model.Products)
                             {
                                 <div class="mehsul col-lg-3">
                                         

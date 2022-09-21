@@ -3,9 +3,13 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using WorldTelecomFinal.DAL;
+using WorldTelecomFinal.Models;
 using WorldTelecomFinal.ViewModels.BasketViewModels;
+using WorldTelecomFinal.ViewModels.HomeViewModels;
+
 
 namespace WorldTelecomFinal.Controllers
 {
@@ -18,29 +22,42 @@ namespace WorldTelecomFinal.Controllers
         }
         public async Task<IActionResult> Index()
         {
+            //List<Product> products = await _context.Products.ToListAsync();
+
+            HomeViewModel homeViewModel = new HomeViewModel
+            {
+                Products = await _context.Products.ToListAsync(),
+                Sliders = await _context.Sliders.ToListAsync(),
+                //BestSeller = products.Where(p => p.IsBestSeller).ToList(),
+                //Feature = products.Where(p => p.IsFeature).ToList(),
+                //NewArrivel = products.Where(p => p.IsNewArrivel).ToList()
+            };
+
+            return View(homeViewModel);
+        }
 
             // Session barede Numune -1
             //HttpContext.Session.SetString("p129", "p129 Hello World!");
 
             //Cookie Barede Numune -1
             //HttpContext.Response.Cookies.Append("p129", "p129 Hello World Cookie!");
-            string basket = HttpContext.Request.Cookies["basket"];
+            //string basket = HttpContext.Request.Cookies["basket"];
 
-            List<BasketVM> basketVMs = null;
+            //List<BasketVM> basketVMs = null;
 
-            if (basket != null)
-            {
-                basketVMs = JsonConvert.DeserializeObject<List<BasketVM>>(basket);
-            }
-            else
-            {
-                basketVMs = new List<BasketVM>();
-            }
+            //if (basket != null)
+            //{
+            //    basketVMs = JsonConvert.DeserializeObject<List<BasketVM>>(basket);
+            //}
+            //else
+            //{
+            //    basketVMs = new List<BasketVM>();
+            //}
 
-            ViewBag.Basket = basketVMs;
+            //ViewBag.Basket = basketVMs;
 
-            return View(await _context.Products.ToListAsync());
-        }
+        //    return View(await _context.Products.ToListAsync());
+        //}
 
 
 

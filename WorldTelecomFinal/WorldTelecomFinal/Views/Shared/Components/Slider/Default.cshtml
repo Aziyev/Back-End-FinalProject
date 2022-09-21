@@ -1,0 +1,25 @@
+﻿@model List<Slider>
+
+
+
+         <div class="slideshow-container">
+                        
+ @foreach (Slider slider in Model)
+  {
+       <div class="mySlides fade">           
+            <img src="~/assets/img/slideshow/@slider.Image" style="width:100%">
+      </div>
+   }                
+       </div>
+
+   <div class="after-slideshow">
+                            <div class="btn-box prev" onclick="plusSlides(-1)">
+                                <a><i class="fa-solid fa-chevron-left"></i></a>
+                            </div>
+                            <div class="slideshow-mini">
+                                <!-- To be Countined -->
+                            </div>
+               <div class="btn-box next" onclick="plusSlides(1)">
+                                <a><i class="fa-solid fa-chevron-right"></i></a>
+             </div>
+   </div>

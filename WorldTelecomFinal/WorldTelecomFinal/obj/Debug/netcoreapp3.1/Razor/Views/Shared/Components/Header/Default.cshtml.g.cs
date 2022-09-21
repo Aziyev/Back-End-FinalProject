@@ -33,8 +33,15 @@ using WorldTelecomFinal.ViewModels.HeaderViewModels;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 5 "C:\Users\aziye\Desktop\Back-End-FinalProject\WorldTelecomFinal\WorldTelecomFinal\Views\_ViewImports.cshtml"
+using WorldTelecomFinal.ViewModels.HomeViewModels;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"42616cc890ad217ef747d2bd60c4547d93dc9245", @"/Views/Shared/Components/Header/Default.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d101437b5ed87e6af833f3a9b69ae05985c6d299", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e494c65a3c9136321d0da0e04fc605c67df3a537", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views_Shared_Components_Header_Default : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<HeaderViewModel>
     #nullable disable
@@ -94,9 +101,9 @@ using WorldTelecomFinal.ViewModels.HeaderViewModels;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("   \r\n\r\n<header>\r\n\r\n        <div class=\"container\">\r\n            <div class=\"h-top\">\r\n                <div>\r\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "42616cc890ad217ef747d2bd60c4547d93dc924513364", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "42616cc890ad217ef747d2bd60c4547d93dc924513603", async() => {
                 WriteLiteral("\r\n                        ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "42616cc890ad217ef747d2bd60c4547d93dc924513644", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "42616cc890ad217ef747d2bd60c4547d93dc924513883", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -140,7 +147,7 @@ AddHtmlAttributeValue("", 283, Model.Settings.FirstOrDefault(s=>s.Key == "Header
             BeginWriteAttribute("src", " src=\"", 637, "\"", 643, 0);
             EndWriteAttribute();
             WriteLiteral(">\r\n                                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "42616cc890ad217ef747d2bd60c4547d93dc924517048", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "42616cc890ad217ef747d2bd60c4547d93dc924517287", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -165,7 +172,7 @@ AddHtmlAttributeValue("", 721, Model.Settings.FirstOrDefault(s=>s.Key == "BankKa
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                                <span>BirKart əldə edin</span>\r\n                            </a>\r\n                        </li>\r\n                        <li>\r\n                            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "42616cc890ad217ef747d2bd60c4547d93dc924518987", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "42616cc890ad217ef747d2bd60c4547d93dc924519226", async() => {
                 WriteLiteral("<span>Korporativ satışlar</span>\r\n                            ");
             }
             );
@@ -194,7 +201,7 @@ AddHtmlAttributeValue("", 721, Model.Settings.FirstOrDefault(s=>s.Key == "BankKa
                               </div>
                         </li>
                         <li>");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "42616cc890ad217ef747d2bd60c4547d93dc924521402", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "42616cc890ad217ef747d2bd60c4547d93dc924521641", async() => {
                 WriteLiteral("<span>Mağazalarımız</span>");
             }
             );
@@ -212,7 +219,7 @@ AddHtmlAttributeValue("", 721, Model.Settings.FirstOrDefault(s=>s.Key == "BankKa
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</li>\r\n                        <li>");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "42616cc890ad217ef747d2bd60c4547d93dc924522817", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "42616cc890ad217ef747d2bd60c4547d93dc924523056", async() => {
                 WriteLiteral("<span>Vakansiya</span>");
             }
             );
@@ -230,7 +237,7 @@ AddHtmlAttributeValue("", 721, Model.Settings.FirstOrDefault(s=>s.Key == "BankKa
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</li>\r\n                        <li>");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "42616cc890ad217ef747d2bd60c4547d93dc924524228", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "42616cc890ad217ef747d2bd60c4547d93dc924524467", async() => {
                 WriteLiteral("<span>Bloq</span>");
             }
             );
@@ -268,7 +275,7 @@ AddHtmlAttributeValue("", 721, Model.Settings.FirstOrDefault(s=>s.Key == "BankKa
                     <div class=""category"">
                         <button>
                            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "42616cc890ad217ef747d2bd60c4547d93dc924526437", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "42616cc890ad217ef747d2bd60c4547d93dc924526676", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -283,7 +290,7 @@ AddHtmlAttributeValue("", 721, Model.Settings.FirstOrDefault(s=>s.Key == "BankKa
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                            <span>Kateqoriyalar</span>\r\n                        </button>\r\n\r\n                    </div>\r\n                    <div class=\"search1\">\r\n                       <div class=\"search-box\">\r\n                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "42616cc890ad217ef747d2bd60c4547d93dc924527806", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "42616cc890ad217ef747d2bd60c4547d93dc924528045", async() => {
                 WriteLiteral("\r\n                            <input type=\"text\" data-url=\"http://localhost:60506/product/search\" class=\"searchinput\" placeholder=\"Məhsul axtar...\">\r\n                            <button><i class=\"fas fa-search\"></i></button>\r\n                        ");
             }
             );
@@ -310,7 +317,7 @@ AddHtmlAttributeValue("", 721, Model.Settings.FirstOrDefault(s=>s.Key == "BankKa
                     </div>
                     <div class=""companies"">
                         ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "42616cc890ad217ef747d2bd60c4547d93dc924529766", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "42616cc890ad217ef747d2bd60c4547d93dc924530005", async() => {
                 WriteLiteral("\r\n                        <button>\r\n                            Kampaniyalar\r\n                        </button>");
             }
             );
@@ -328,7 +335,7 @@ AddHtmlAttributeValue("", 721, Model.Settings.FirstOrDefault(s=>s.Key == "BankKa
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                        <div class=\"companies-icons\">\r\n                            <div class=\"ico1 dropdown\">\r\n                                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "42616cc890ad217ef747d2bd60c4547d93dc924531393", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "42616cc890ad217ef747d2bd60c4547d93dc924531632", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -354,9 +361,9 @@ AddHtmlAttributeValue("", 721, Model.Settings.FirstOrDefault(s=>s.Key == "BankKa
                                   </div>
                             </div>
                             ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "42616cc890ad217ef747d2bd60c4547d93dc924533155", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "42616cc890ad217ef747d2bd60c4547d93dc924533394", async() => {
                 WriteLiteral("<div class=\"ico2\">\r\n                                ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "42616cc890ad217ef747d2bd60c4547d93dc924533463", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "42616cc890ad217ef747d2bd60c4547d93dc924533702", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -387,7 +394,7 @@ AddHtmlAttributeValue("", 721, Model.Settings.FirstOrDefault(s=>s.Key == "BankKa
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n\r\n\r\n                            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "42616cc890ad217ef747d2bd60c4547d93dc924535815", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "42616cc890ad217ef747d2bd60c4547d93dc924536054", async() => {
                 WriteLiteral("\r\n                                <div class=\"ico3 dropdowna header-basket\">\r\n                                \r\n                                 ");
 #nullable restore
 #line 95 "C:\Users\aziye\Desktop\Back-End-FinalProject\WorldTelecomFinal\WorldTelecomFinal\Views\Shared\Components\Header\Default.cshtml"
@@ -428,7 +435,7 @@ AddHtmlAttributeValue("", 721, Model.Settings.FirstOrDefault(s=>s.Key == "BankKa
         <div class=""mobile-header1"">
             <div class=""mhleft"">
                 ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "42616cc890ad217ef747d2bd60c4547d93dc924538034", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "42616cc890ad217ef747d2bd60c4547d93dc924538273", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -457,7 +464,7 @@ AddHtmlAttributeValue("", 721, Model.Settings.FirstOrDefault(s=>s.Key == "BankKa
             BeginWriteAttribute("href", " href=\"", 6066, "\"", 6073, 0);
             EndWriteAttribute();
             WriteLiteral(">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "42616cc890ad217ef747d2bd60c4547d93dc924539793", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "42616cc890ad217ef747d2bd60c4547d93dc924540032", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -474,7 +481,7 @@ AddHtmlAttributeValue("", 721, Model.Settings.FirstOrDefault(s=>s.Key == "BankKa
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</a>\r\n            </div>\r\n            <div class=\"mh-overlay-content\">\r\n                <div class=\"item-top-bottom\">\r\n                    <div class=\"item-top\">\r\n                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "42616cc890ad217ef747d2bd60c4547d93dc924541276", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "42616cc890ad217ef747d2bd60c4547d93dc924541515", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -499,7 +506,7 @@ AddHtmlAttributeValue("", 721, Model.Settings.FirstOrDefault(s=>s.Key == "BankKa
                 <div class=""item-top-bottom"">
                     <div class=""item-top"">
                         ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "42616cc890ad217ef747d2bd60c4547d93dc924542869", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "42616cc890ad217ef747d2bd60c4547d93dc924543108", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -524,7 +531,7 @@ AddHtmlAttributeValue("", 721, Model.Settings.FirstOrDefault(s=>s.Key == "BankKa
                 <div class=""item-top-bottom"">
                     <div class=""item-top"">
                         ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "42616cc890ad217ef747d2bd60c4547d93dc924544462", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "42616cc890ad217ef747d2bd60c4547d93dc924544701", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -549,7 +556,7 @@ AddHtmlAttributeValue("", 721, Model.Settings.FirstOrDefault(s=>s.Key == "BankKa
                 <div class=""item-top-bottom"">
                     <div class=""item-top"">
                         ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "42616cc890ad217ef747d2bd60c4547d93dc924546055", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "42616cc890ad217ef747d2bd60c4547d93dc924546294", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -574,7 +581,7 @@ AddHtmlAttributeValue("", 721, Model.Settings.FirstOrDefault(s=>s.Key == "BankKa
                 <div class=""item-top-bottom"">
                     <div class=""item-top"">
                         ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "42616cc890ad217ef747d2bd60c4547d93dc924547648", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "42616cc890ad217ef747d2bd60c4547d93dc924547887", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -599,7 +606,7 @@ AddHtmlAttributeValue("", 721, Model.Settings.FirstOrDefault(s=>s.Key == "BankKa
                 <div class=""item-top-bottom"">
                     <div class=""item-top"">
                         ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "42616cc890ad217ef747d2bd60c4547d93dc924549241", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "42616cc890ad217ef747d2bd60c4547d93dc924549480", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -632,7 +639,7 @@ AddHtmlAttributeValue("", 721, Model.Settings.FirstOrDefault(s=>s.Key == "BankKa
             </div>
         </div>
         <span onclick=""openNav()"">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "42616cc890ad217ef747d2bd60c4547d93dc924551129", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "42616cc890ad217ef747d2bd60c4547d93dc924551368", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -651,7 +658,7 @@ AddHtmlAttributeValue("", 721, Model.Settings.FirstOrDefault(s=>s.Key == "BankKa
             BeginWriteAttribute("href", " href=\"", 9063, "\"", 9070, 0);
             EndWriteAttribute();
             WriteLiteral(">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "42616cc890ad217ef747d2bd60c4547d93dc924552487", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "42616cc890ad217ef747d2bd60c4547d93dc924552726", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -667,7 +674,7 @@ AddHtmlAttributeValue("", 721, Model.Settings.FirstOrDefault(s=>s.Key == "BankKa
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</a>\r\n        <div class=\"mhicons\">\r\n            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "42616cc890ad217ef747d2bd60c4547d93dc924553738", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "42616cc890ad217ef747d2bd60c4547d93dc924553977", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -682,7 +689,7 @@ AddHtmlAttributeValue("", 721, Model.Settings.FirstOrDefault(s=>s.Key == "BankKa
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "42616cc890ad217ef747d2bd60c4547d93dc924554866", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "42616cc890ad217ef747d2bd60c4547d93dc924555105", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -697,7 +704,7 @@ AddHtmlAttributeValue("", 721, Model.Settings.FirstOrDefault(s=>s.Key == "BankKa
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "42616cc890ad217ef747d2bd60c4547d93dc924555994", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "42616cc890ad217ef747d2bd60c4547d93dc924556233", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
