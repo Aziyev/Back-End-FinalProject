@@ -169,9 +169,12 @@
    header{ 
     display: none;
    }
-   footer{
-    display: none;
-   }
+    .dropdowna{
+        display:none!important;
+    }
+    footer {
+        display: none;
+    }
    .home-left{
     display: none;
    }

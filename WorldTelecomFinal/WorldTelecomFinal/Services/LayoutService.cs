@@ -8,10 +8,11 @@ using WorldTelecomFinal.DAL;
 using WorldTelecomFinal.Models;
 using System;
 using System.Linq;
+using WorldTelecomFinal.Interfaces;
 
 namespace WorldTelecomFinal.Services
 {
-    public class LayoutService
+    public class LayoutService : ILayoutService
     {
         private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly AppDbContext _context;
@@ -37,8 +38,22 @@ namespace WorldTelecomFinal.Services
                 basketVMs = new List<BasketVM>();
             }
 
+            foreach (BasketVM basketVM in basketVMs)
+            {
+                Product product = await _context.Products.FirstOrDefaultAsync(p => p.Id == basketVM.ProductId);
+
+                basketVM.Name = product.Name;
+                basketVM.Price = product.DiscoutnPrice > 0 ? product.DiscoutnPrice : product.Price;
+                basketVM.Image = product.MainImage;
+            }
+
             return basketVMs;
         }
 
+        public async Task<IDictionary<string, string>> GetSetting()
+        {
+            IDictionary<string, string> settings = await _context.Settings.ToDictionaryAsync(x => x.Key, x => x.Value);
+            return settings;
+        }
     }
 }

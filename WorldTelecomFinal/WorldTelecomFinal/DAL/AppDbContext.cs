@@ -15,6 +15,8 @@ namespace WorldTelecomFinal.DAL
         public DbSet<Product> Products { get; set; }
         public DbSet<ProductTag> ProductsTag { get; set; }
         public DbSet<ProductImage> ProductsImage { get; set; }
+        public DbSet<Setting> Settings { get; set; }
+        public DbSet<Slider> Sliders { get; set; }
 
 
 

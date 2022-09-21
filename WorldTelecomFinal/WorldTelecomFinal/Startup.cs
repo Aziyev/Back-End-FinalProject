@@ -11,6 +11,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using WorldTelecomFinal.DAL;
+using WorldTelecomFinal.Interfaces;
+using WorldTelecomFinal.Services;
 
 namespace WorldTelecomFinal
 {
@@ -38,6 +40,11 @@ namespace WorldTelecomFinal
                 options.IdleTimeout = TimeSpan.FromSeconds(5);
             }
                 );
+
+            //singleton//transinet
+            //Singleton Error cixardi! 
+            services.AddScoped<ILayoutService, LayoutService>();
+
             services.AddHttpContextAccessor();
 
         }

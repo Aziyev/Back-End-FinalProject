@@ -74,7 +74,7 @@ $(document).ready(function () {
 
         fetch(url).then(res => res.text()).then(data =>
         {
-            $('.dropdowna-contenta').html(data);
+            $('.header-basket').html(data);
         });
     })
 
@@ -87,7 +87,7 @@ $(document).ready(function () {
         fetch(url)
             .then(res => res.text())
             .then(data => {
-                $('.mini-cart').html(data);
+                $('.header-basket').html(data);
             })
     })
 })

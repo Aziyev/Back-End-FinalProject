@@ -37,20 +37,29 @@ namespace WorldTelecomFinal.Controllers
                 basketVMs = JsonConvert.DeserializeObject<List<BasketVM>>(basket);
             else
                 basketVMs = new List<BasketVM>();
-            BasketVM basketVM = new BasketVM
-            {
-                //Mene yalniz Id ve Count lazimdir, diger parametrler asagida Db productdan gelir.
-                ProductId = product.Id,
-                Count = 0
-            };
 
-            basketVMs.Add(basketVM);
+            if (basketVMs.Exists(b => b.ProductId == id))
+            {
+                basketVMs.Find(b => b.ProductId == id).Count++;
+            }
+            else
+            {
+                BasketVM basketVM = new BasketVM
+                {
+                    ProductId = product.Id,
+                    Count = 1
+                };
+
+                basketVMs.Add(basketVM);
+            }
+
+           
 
             basket = JsonConvert.SerializeObject(basketVMs);
 
             HttpContext.Response.Cookies.Append("basket", basket);
 
-            return PartialView("_BasketPartial", _getBasketItemAsync(basketVMs));
+            return PartialView("_BasketPartial", await _getBasketItemAsync(basketVMs));
 
         }
 
@@ -77,7 +86,7 @@ namespace WorldTelecomFinal.Controllers
             HttpContext.Response.Cookies.Append("basket", basket);
 
            
-            return PartialView("_BasketPartial", _getBasketItemAsync(basketVMs));
+            return PartialView("_BasketPartial", await _getBasketItemAsync(basketVMs));
         }
 
 
@@ -90,7 +99,6 @@ namespace WorldTelecomFinal.Controllers
             foreach (BasketVM item in basketVMs)
             {
                 Product dbProduct = await _context.Products.FirstOrDefaultAsync(p => p.Id == item.ProductId);
-
                 item.Name = dbProduct.Name;
                 item.Price = dbProduct.DiscoutnPrice > 0 ? dbProduct.DiscoutnPrice : dbProduct.Price;
                 item.Image = dbProduct.MainImage;

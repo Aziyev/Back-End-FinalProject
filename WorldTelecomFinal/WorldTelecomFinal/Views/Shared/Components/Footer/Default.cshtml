@@ -1,0 +1,159 @@
+﻿@model IDictionary<string , string >
+
+      <footer>
+        <div class="container">
+            <div class="footerall">
+                <div class="footer-left">
+                    <ul>
+                        <li>
+                            <div>
+                                <a asp-controller="home" asp-action="index"><img id="footerlogoo" src="~/assets/img/header-icons/@Model.FirstOrDefault(s=>s.Key == "FooterLogo").Value" alt=""></a>
+                            </div>
+                        </li>
+                        <li >
+                            <a href="tel:*2555" class="d-flex"><img src="~/assets/img/footer1.svg" alt=""><span class="Footer_bold__3DS8B">@Model.FirstOrDefault(s=>s.Key == "CallNumber").Value</span></a>
+                        </li>
+                        <li>
+                            <a href="mailto:info@w-t.az"><img src="~/assets/img/footer2.svg" alt=""><span>@Model.FirstOrDefault(s=>s.Key == "Email").Value</span></a>
+                        </li>
+                        <li><div><img src="~/assets/img/footer3.svg" alt=""><span>Mağazalar</span></div></li>
+                        <li><div><img src="~/assets/img/footer4.svg" alt=""><span>Korporativ satışlar</span></div></li>
+                        <li><div><img src="~/assets/img/footer5.svg" alt=""><span>Haqqımızda</span></div></li>
+                    </ul>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-box">
+                        <h2>Telefonlar və <br> planşetlər</h2>
+                        <ul>
+                            <li>
+                                <a href="#">Mobil telefonlar</a>
+                            </li><li>
+                                <a href="#">Planşetlər</a>
+                            </li><li>
+                                <a href="#">Ev telefonları</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-box">
+                        <h2>Qadjet və <br> aksesuarlar</h2>
+                        <ul>
+                            <li>
+                                <a href="#">Powerbanklar</a>
+                            </li><li>
+                                <a href="#">Digər</a>
+                            </li><li>
+                                <a href="#">Smart saatlar</a>
+                            </li>
+                            <li>
+                                <a href="#">Adapterlər</a>
+                            </li><li>
+                                <a href="#">Elektron kitablar
+                                </a>
+                            </li><li>
+                                <a href="#">Kamera</a>
+                            </li><li>
+                                <a href="#">Kabellər</a>
+                            </li><li>
+                                <a href="#">Saatlar</a>
+                            </li><li>
+                                <a href="#">Portativ soyuducular</a>
+                            </li><li>
+                                <a href="#">Avtomobil üçün adapterlər</a>
+                            </li><li>
+                                <a href="#">Avtomobil üçün tutacaqlar</a>
+                            </li><li>
+                                <a href="#">Veb-kameralar
+                                    Proyektorlar</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-box">
+                        <h2>TV, Audio və <br>Əyləncə</h2>
+                        <ul>
+                            <li>
+                                <a href="#">Simsiz qulaqlıqlar</a>
+                            </li><li>
+                                <a href="#">TV</a>
+                            </li><li>
+                                <a href="#">Oyun konsolları</a>
+                            </li>
+                            <li>
+                                <a href="#">Nəqliyyat</a>
+                            </li><li>
+                                <a href="#">Oyunlar
+                                </a>
+                            </li><li>
+                                <a href="#">Səsucaldıcılar</a>
+                            </li><li>
+                                <a href="#">Portativ akustika</a>
+                            </li><li>
+                                <a href="#">Simli qulaqlıqlar</a>
+                            </li><li>
+                                <a href="#">Oyun Zonası</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-box">
+                        <h2>Kompüter <br> texnikası</h2>
+                        <ul>
+                            <li>
+                                <a href="#">Notbuklar</a>
+                            </li><li>
+                                <a href="#">Monobloklar</a>
+                            </li><li>
+                                <a href="#">Modem və router</a>
+                            </li>
+                            <li>
+                                <a href="#">Printertlər</a>
+                            </li><li>
+                                <a href="#">Monitorlar
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-box">
+                        <h2>Məişət texnikası</h2>
+                        <ul>
+                            <li>
+                                <a href="#">Robot tozsoranlar</a>
+                            </li><li>
+                                <a href="#">Aspiratorlar</a>
+                            </li><li>
+                                <a href="#">Tozsoranlar</a>
+                            </li>
+                            <li>
+                                <a href="#">Paltaryuyan maşınlar</a>
+                            </li><li>
+                                <a href="#">Qabyuyan maşınlar
+                                </a>
+                            </li><li>
+                                <a href="#">Soyuducular</a>
+                            </li><li>
+                                <a href="#">Mikrodalğalı soba</a>
+                            </li><li>
+                                <a href="#">Sobalar</a>
+                            </li><li>
+                                <a href="#">Bişirmə paneli</a>
+                            </li>
+                            <li>
+                                <a href="#">Fenlər</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-box"><h2>Nömrələr</h2></div>
+                 
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <hr>
+                <div class="fbb">
+                    <h2>Bütün hüquqlar qorunur © World Telecom 1998-2022</h2>
+                <div class="f-bottom-icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+                </div>
+            </div>
+        </div>
+    </footer>
