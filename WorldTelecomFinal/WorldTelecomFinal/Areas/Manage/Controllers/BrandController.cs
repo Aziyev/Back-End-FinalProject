@@ -1,10 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using WorldTelecomFinal.DAL;
 using WorldTelecomFinal.Models;
+using WorldTelecomFinal.ViewModels;
 
 namespace WorldTelecomFinal.Areas.Manage.Controllers
 {
@@ -18,26 +20,23 @@ namespace WorldTelecomFinal.Areas.Manage.Controllers
         {
             _context = context;
         }
-        public  async Task<IActionResult> Index(int? status)
+        public  async Task<IActionResult> Index(int? status, int page=1)
         {
-            IQueryable<Brand> brands = _context.Brands;
+            IQueryable<Brand> query = _context.Brands;
             if(status != null && status > 0)
             {
                 if (status == 1)
                 {
-                    brands = brands.Where(b => b.IsDeleted);
+                    query = query.Where(b => b.IsDeleted);
                 }
                 else if (status == 2)
                 {
-                    brands = brands.Where(b => !b.IsDeleted);
+                    query = query.Where(b => !b.IsDeleted);
                 }
             }
 
-            ViewBag.Status = status;
-
-
-
-            return View(await brands.ToListAsync());
+            int itemCount = int.Parse(_context.Settings.FirstOrDefault(s => s.Key == "PageItemCount").Value);
+            return View(PageNatedList<Brand>.Create(query,page,itemCount));
         }
 
         [HttpGet]

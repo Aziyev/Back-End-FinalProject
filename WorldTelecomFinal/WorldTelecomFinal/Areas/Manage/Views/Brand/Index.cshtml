@@ -1,8 +1,7 @@
-﻿@model List<Brand>
+﻿@model PageNatedList<Brand>
 
 @{
     ViewData["Title"] = "Index";
-    int no = 1;
 }
 
 
@@ -69,91 +68,28 @@
               </div>
 
               
+              <div style="display:flex; justify-content:space-between; width:300px; padding-top:20px;">
+
+            @if(Model.HasPrev)
+            {
+                <div><a style="background-color:gray; color:white; border-radius:5px; border:1px solid black; padding:5px 10px;" asp-area="manage" asp-controller="Brand" asp-action="index" asp-route-status="@ViewBag.Status" asp-route-page="1"> @("<<") </a></div>
+                <div><a style="background-color:gray; color:white; border-radius:5px; border:1px solid black; padding:5px 10px;" asp-area="manage" asp-controller="Brand" asp-action="index" asp-route-status="@ViewBag.Status" asp-route-page="@(Model.Page-1)"> @("<") </a></div>
+
+            }   
+                  @for (int i = 1; i < Model.PageCount; i++)
+                    {
+                <div><a style="background-color:gray; color:white; border-radius:5px; border:1px solid black; padding:5px 10px;" asp-area="manage" asp-controller="Brand" asp-action="index" asp-route-status="@ViewBag.Status" asp-route-page="@i"> @i </a></div>
+                 }
+            @if (Model.HasNext)
+            {
+                <div><a style="background-color:gray; color:white; border-radius:5px; border:1px solid black; padding:5px 10px;" asp-area="manage" asp-controller="Brand" asp-action="index" asp-route-status="@ViewBag.Status" asp-route-page="@(Model.Page+1)"> @(">") </a></div>
+                <div><a style="background-color:gray; color:white; border-radius:5px; border:1px solid black; padding:5px 10px;" asp-area="manage" asp-controller="Brand" asp-action="index" asp-route-status="@ViewBag.Status" asp-route-page="@Model.Page)"> @(">>") </a></div>
+
+            }
+                 
+              </div>
             </div>
  
             <div class="content-backdrop fade"></div>
           </div>
 
-@*
-    <div class="row">
-        <div class="col-lg-12">
-            <table>
-               <thead>
-                 <tr>
-                    <th>NO</th>
-                    <th>Name</th>
-                </tr>
-               </thead>
-               <tbody>
-                   @foreach (Brand brand in Model)
-                    {
-                        <tr>
-                            <td>@no</td>
-                            <td>@brand.Name</td>
-                        </tr>
-
-                        no++;
-                    }
-               </tbody>
-            </table>
-        </div>
-
-    </div>*@
-   
-
-
-
-
-@*                <div class="row justify-content-between">
-    <div class="col-lg-2">
-        <h1>Brands</h1>
-    </div>
-    <div class="col-lg-6">
-        <form>
-            <div class="row">
-                <div class="col">
-                    <label class="form-label">Brand Statusu</label>
-                    <select name="status" class="form-select" aria-label="Default select example">
-                        @if (ViewBag.Status == 0)
-                        {
-                            <option selected value="0">All</option>
-                        }
-                        else
-                        {
-                            <option value="0">All</option>
-                        }
-
-                        @if (ViewBag.Status == 1)
-                        {
-                            <option selected value="1">Silinenler</option>
-                        }
-                        else
-                        {
-                            <option value="1">Silinenler</option>
-                        }
-
-                        @if (ViewBag.Status == 2)
-                        {
-                            <option selected value="2">Silinmiyenler</option>
-                        }
-                        else
-                        {
-                            <option value="2">Silinmiyenler</option>
-                        }
-                    </select>
-                </div>
-                <div class="col">
-                    <button class="btn btn-primary" type="submit">Filter</button>
-                </div>
-            </div>
-        </form>
-    </div>
-    <div class="col-lg-1">
-        <a class="btn btn-success" asp-area="manage" asp-controller="brand" asp-action="create">Create</a>
-    </div>
-</div>
-<div class="row">
-    <div class="col-lg-12 tblContent">
-        @await Html.PartialAsync("_BrandIndexPartial", Model) 
-    </div>
-</div>*@

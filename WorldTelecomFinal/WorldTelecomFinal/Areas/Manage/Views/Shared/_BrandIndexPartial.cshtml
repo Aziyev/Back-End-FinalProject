@@ -1,8 +1,8 @@
-﻿@model List<Brand>
+﻿@model PageNatedList<Brand>
 
 @{
    
-    int no = 1;
+    int no = Model.ItemCount * (Model.Page -1) ;
 }
 
 
@@ -19,6 +19,7 @@
 
                          @foreach (Brand brand in Model)
                 {
+                    no++;
                      <tr>
                         <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>@no</strong></td>
                         <td>@brand.Name</td>
@@ -47,7 +48,7 @@
                         </td>
 
                             </tr>
-                            no++;
+                            
                         }
 
                      
