@@ -37,11 +37,11 @@
 
                            @if (category.IsDeleted)
                             {
-                                <a class="dropdown-item restore-btn-admin" asp-area="manage" asp-controller="category" asp-action="restore" asp-route-id="@category.Id"><i class="bx bx-trash me-1"></i> restore</a>
+                                <a class="dropdown-item restore-btn-admin" asp-area="manage" asp-controller="category" asp-action="restore" asp-route-id="@category.Id" asp-route-page="@Model.Page"><i class="bx bx-trash me-1"></i> restore</a>
                             }
                             else
                             {
-                                <a class="dropdown-item delete-btn-admin" asp-area="manage" asp-controller="category" asp-action="delete" asp-route-id="@category.Id"><i class="bx bx-trash me-1"></i> delete</a>
+                                <a class="dropdown-item delete-btn-admin" asp-area="manage" asp-controller="category" asp-action="delete" asp-route-id="@category.Id" asp-route-page="@Model.Page"><i class="bx bx-trash me-1"></i> delete</a>
                             }
 
                               

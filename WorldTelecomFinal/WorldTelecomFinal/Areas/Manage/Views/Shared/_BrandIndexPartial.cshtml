@@ -35,11 +35,11 @@
 
                             @if (brand.IsDeleted)
                             {
-                                <a class="dropdown-item restore-btn-admin" asp-area="manage" asp-controller="brand" asp-action="restore" asp-route-id="@brand.Id"><i class="bx bx-trash me-1"></i> Restore</a>
+                                <a class="dropdown-item restore-btn-admin" asp-area="manage" asp-controller="brand" asp-action="restore" asp-route-id="@brand.Id" asp-route-page="@Model.Page"><i class="bx bx-trash me-1"></i> Restore</a>
                             }
                             else
                             {
-                                <a class="dropdown-item delete-btn-admin" asp-area="manage" asp-controller="brand" asp-action="delete" asp-route-id="@brand.Id"><i class="bx bx-trash me-1"></i> Delete</a>
+                                <a class="dropdown-item delete-btn-admin" asp-area="manage" asp-controller="brand" asp-action="delete" asp-route-id="@brand.Id" asp-route-page="@Model.Page"><i class="bx bx-trash me-1"></i> Delete</a>
                             }
 
                               

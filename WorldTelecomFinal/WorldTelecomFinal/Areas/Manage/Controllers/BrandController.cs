@@ -85,8 +85,7 @@ namespace WorldTelecomFinal.Areas.Manage.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-
-        public async Task<IActionResult> Update(int? id,Brand brand)
+        public async Task<IActionResult> Update(int? id, Brand brand)
         {
             if (id == null)
                 return BadRequest();
@@ -100,20 +99,18 @@ namespace WorldTelecomFinal.Areas.Manage.Controllers
                 return NotFound();
 
             if (await _context.Brands.AnyAsync(b => b.Id != brand.Id && !b.IsDeleted && b.Name.ToLower().Trim() == brand.Name.ToLower().Trim()))
-            {
-                ModelState.AddModelError("Name", $"{brand.Name} Alreade Exsist!!!");
+                ModelState.AddModelError("Name", $"{brand.Name} Alreade Exists");
                 return View();
-            }
-
 
             dbbrand.Name = brand.Name;
             dbbrand.IsUpdated = true;
             dbbrand.UpdatedAt = DateTime.UtcNow.AddHours(+4);
             await _context.SaveChangesAsync();
+ 
 
-            return RedirectToAction("Index");
+            return RedirectToAction("index");
         }
-        public async Task<IActionResult> Delete(int? id)
+        public async Task<IActionResult> Delete(int? id, int? status, int page)
         {
             if (id == null)
                 return BadRequest();
@@ -124,13 +121,24 @@ namespace WorldTelecomFinal.Areas.Manage.Controllers
                 return NotFound();
 
             brand.IsDeleted = true;
-            brand.DeletedAt = DateTime.UtcNow.AddHours(+4);
+            brand.DeletedAt = DateTime.UtcNow.AddHours(4);
 
             await _context.SaveChangesAsync();
-            return PartialView("_BrandIndexPartial", await _context.Brands.ToListAsync());
+
+            IQueryable<Brand> brands = _context.Brands;
+
+            if (status != null && status > 0)
+                if (status == 1)
+                    brands = brands.Where(b => b.IsDeleted);
+                else if (status == 2)
+                    brands = brands.Where(b => !b.IsDeleted);
+
+            ViewBag.Status = status;
+            int itemCount = int.Parse(_context.Settings.FirstOrDefault(s => s.Key == "PageItemCount").Value);
+            return PartialView("_BrandIndexPartial", PageNatedList<Brand>.Create(brands, page, itemCount));
         }
 
-        public async Task<IActionResult> Restore(int? id)
+        public async Task<IActionResult> Restore(int? id, int? status, int page)
         {
             if (id == null)
                 return BadRequest();
@@ -139,12 +147,23 @@ namespace WorldTelecomFinal.Areas.Manage.Controllers
 
             if (brand == null)
                 return NotFound();
-
             brand.IsDeleted = false;
             brand.DeletedAt = null;
 
             await _context.SaveChangesAsync();
-            return PartialView("_BrandIndexPartial", await _context.Brands.ToListAsync());
+
+
+            IQueryable<Brand> brands = _context.Brands;
+
+            if (status != null && status > 0)
+                if (status == 1)
+                    brands = brands.Where(b => b.IsDeleted);
+                else if (status == 2)
+                    brands = brands.Where(b => !b.IsDeleted);
+
+            ViewBag.Status = status;
+            int itemCount = int.Parse(_context.Settings.FirstOrDefault(s => s.Key == "PageItemCount").Value);
+            return PartialView("_BrandIndexPartial", PageNatedList<Brand>.Create(brands, page, itemCount));
         }
 
 
