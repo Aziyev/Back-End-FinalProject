@@ -23,6 +23,10 @@ namespace WorldTelecomFinal.Models
         public int BrandId { get; set; }
         [Range(0, 9999)]
 
+        public bool BestSeller { get; set; }
+
+        public bool IsNewArrivel { get; set; }
+        
 
         //Elave xarakteristikalar
         public string Color { get; set; }

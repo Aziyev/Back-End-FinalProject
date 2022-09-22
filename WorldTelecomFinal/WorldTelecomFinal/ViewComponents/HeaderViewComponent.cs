@@ -21,7 +21,6 @@ namespace WorldTelecomFinal.ViewComponents
 
         public async Task<IViewComponentResult> InvokeAsync(IDictionary<string, string> settings)
         {
-
             List<BasketVM> basketVMs = null;
 
             string basket = HttpContext.Request.Cookies["basket"];

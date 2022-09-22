@@ -22,15 +22,14 @@ namespace WorldTelecomFinal.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            //List<Product> products = await _context.Products.ToListAsync();
+            List<Product> products = await _context.Products.ToListAsync();
 
             HomeViewModel homeViewModel = new HomeViewModel
             {
                 Products = await _context.Products.ToListAsync(),
                 Sliders = await _context.Sliders.ToListAsync(),
-                //BestSeller = products.Where(p => p.IsBestSeller).ToList(),
-                //Feature = products.Where(p => p.IsFeature).ToList(),
-                //NewArrivel = products.Where(p => p.IsNewArrivel).ToList()
+                BestSeller = products.Where(p => p.BestSeller).ToList(),
+                NewArrivel = products.Where(p => p.IsNewArrivel).ToList()
             };
 
             return View(homeViewModel);
@@ -42,7 +41,7 @@ namespace WorldTelecomFinal.Controllers
             //Cookie Barede Numune -1
             //HttpContext.Response.Cookies.Append("p129", "p129 Hello World Cookie!");
             //string basket = HttpContext.Request.Cookies["basket"];
-
+        
             //List<BasketVM> basketVMs = null;
 
             //if (basket != null)
@@ -59,8 +58,6 @@ namespace WorldTelecomFinal.Controllers
         //    return View(await _context.Products.ToListAsync());
         //}
 
-
-
         //Session Barede Numune -2
         //public IActionResult GetSession()
         //{
@@ -68,7 +65,6 @@ namespace WorldTelecomFinal.Controllers
 
         //    return Content(session);
         //}
-
 
         //Cookie Barede Numune -2
         //public IActionResult GetCookie()

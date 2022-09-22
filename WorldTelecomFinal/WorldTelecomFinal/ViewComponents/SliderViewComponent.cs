@@ -17,7 +17,7 @@ namespace WorldTelecomFinal.ViewComponents
         }
         public async Task<IViewComponentResult> InvokeAsync(List<Slider> sliders)
         {
-            return View(await Task.FromResult(await _context.Sliders.ToListAsync()));
+            return View(await Task.FromResult(sliders));
         }
     }
 }
