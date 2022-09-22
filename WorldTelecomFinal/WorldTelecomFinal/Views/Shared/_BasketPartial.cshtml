@@ -10,7 +10,7 @@
             <li>
                 <div class="single-cart-item d-flex">
                     <div class="cart-item-thumb">
-                        <a href="single-product.html"><img style="width:60px; height:60px;" src="/assets/img/productjpg/@basketVM.Image" alt="product"></a>
+                        <a asp-controller="Product" asp-action="index" asp-route-id="@basketVM.ProductId"><img style="width:60px; height:60px;" src="/assets/img/productjpg/@basketVM.Image" alt="product"></a>
                         <span class="product-quantity">@(basketVM.Count)x</span>
                     </div>
                     <div class="cart-item-content media-body">

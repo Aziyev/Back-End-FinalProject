@@ -66,7 +66,12 @@ namespace WorldTelecomFinal
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapControllerRoute(
+                          name: "areas",
+                          pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+                    );
                 endpoints.MapControllerRoute("default", "{controller=home}/{action=index}/{id?}");
+                
             });
         }
     }

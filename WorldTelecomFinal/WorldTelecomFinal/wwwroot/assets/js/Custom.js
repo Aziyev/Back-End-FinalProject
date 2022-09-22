@@ -90,4 +90,10 @@ $(document).ready(function () {
                 $('.header-basket').html(data);
             })
     })
+
+    let path = window.location.pathname
+    path = path.split('/')
+    let links = $('.h-top-right li')
+
+
 })
