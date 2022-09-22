@@ -47,6 +47,7 @@
     <link rel="stylesheet" href="~/manage/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
 
     <link rel="stylesheet" href="~/manage/vendor/libs/apex-charts/apex-charts.css" />
+    <link rel="stylesheet" href="~/manage/css/sweetalertAP.css" />
 
     <!-- Page CSS -->
 
@@ -147,6 +148,12 @@
                 <div data-i18n="Analytics">Product</div>
               </a>
             </li>
+            <li class="menu-item">
+              <a asp-controller="brand" asp-action="index" asp-area="manage" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                <div data-i18n="Analytics">Brand</div>
+              </a>
+            </li>
 
             
           </ul>
@@ -160,14 +167,7 @@
     </div>
     <!-- / Layout wrapper -->
 
-    <div class="buy-now">
-      <a
-        href="https://themeselection.com/products/sneat-bootstrap-html-admin-template/"
-        target="_blank"
-        class="btn btn-danger btn-buy-now"
-        >Upgrade to Pro</a
-      >
-    </div>
+  
 
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
@@ -190,5 +190,9 @@
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+   <script src="~/manage/js/custom.js" asp-append-version="true"></script>
+   <script src="~/manage/js/SweetAlertAP.js" asp-append-version="true"></script>
+
+    @RenderSection("Script",false)
   </body>
 </html>
