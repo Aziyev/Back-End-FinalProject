@@ -67,4 +67,27 @@
             .then(res => res.text())
             .then(data => { $('.tbl-content').html(data) });
     })
+
+
+
+    if ($('.isMainInput').is(":checked")) {
+        $('.imagecontainer').removeClass('d-none');
+        $('.parentcontainer').addClass('d-none');
+    } else {
+        $('.imagecontainer').addClass('d-none');
+        $('.parentcontainer').removeClass('d-none');
+    }
+
+    $(document).on('change', '.isMainInput', function () {
+        $(document).on('change', '.isMainInput', function () {
+            console.log($(this).is(":checked"))
+            if ($(this).is(":checked")) {
+                $('.imagecontainer').removeClass('d-none');
+                $('.parentcontainer').addClass('d-none');
+            } else {
+                $('.imagecontainer').addClass('d-none');
+                $('.parentcontainer').removeClass('d-none');
+            }
+        })
+    } )
 })

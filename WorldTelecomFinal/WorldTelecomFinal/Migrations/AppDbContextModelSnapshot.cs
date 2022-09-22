@@ -51,6 +51,46 @@ namespace WorldTelecomFinal.Migrations
                     b.ToTable("Brands");
                 });
 
+            modelBuilder.Entity("WorldTelecomFinal.Models.Category", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime?>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsMain")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsUpdated")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(100)")
+                        .HasMaxLength(100);
+
+                    b.Property<int?>("ParentId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ParentId");
+
+                    b.ToTable("Categories");
+                });
+
             modelBuilder.Entity("WorldTelecomFinal.Models.Product", b =>
                 {
                     b.Property<int>("Id")
@@ -66,6 +106,9 @@ namespace WorldTelecomFinal.Migrations
 
                     b.Property<string>("CPU")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("CategoryId")
+                        .HasColumnType("int");
 
                     b.Property<int>("Code")
                         .HasColumnType("int");
@@ -109,6 +152,8 @@ namespace WorldTelecomFinal.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("BrandId");
+
+                    b.HasIndex("CategoryId");
 
                     b.ToTable("Products");
                 });
@@ -217,6 +262,13 @@ namespace WorldTelecomFinal.Migrations
                     b.ToTable("Tags");
                 });
 
+            modelBuilder.Entity("WorldTelecomFinal.Models.Category", b =>
+                {
+                    b.HasOne("WorldTelecomFinal.Models.Category", "Parent")
+                        .WithMany("Children")
+                        .HasForeignKey("ParentId");
+                });
+
             modelBuilder.Entity("WorldTelecomFinal.Models.Product", b =>
                 {
                     b.HasOne("WorldTelecomFinal.Models.Brand", "Brand")
@@ -224,6 +276,10 @@ namespace WorldTelecomFinal.Migrations
                         .HasForeignKey("BrandId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.HasOne("WorldTelecomFinal.Models.Category", "Category")
+                        .WithMany("Products")
+                        .HasForeignKey("CategoryId");
                 });
 
             modelBuilder.Entity("WorldTelecomFinal.Models.ProductImage", b =>

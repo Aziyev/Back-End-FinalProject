@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -26,7 +27,11 @@ namespace WorldTelecomFinal.Models
         public bool BestSeller { get; set; }
 
         public bool IsNewArrivel { get; set; }
-        
+
+
+        public Nullable<int> CategoryId { get; set; }
+        public Category Category { get; set; }
+
 
         //Elave xarakteristikalar
         public string Color { get; set; }

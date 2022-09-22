@@ -36,6 +36,7 @@ namespace WorldTelecomFinal.Areas.Manage.Controllers
             }
 
             int itemCount = int.Parse(_context.Settings.FirstOrDefault(s => s.Key == "PageItemCount").Value);
+            ViewBag.Status = status;
             return View(PageNatedList<Brand>.Create(query,page,itemCount));
         }
 
