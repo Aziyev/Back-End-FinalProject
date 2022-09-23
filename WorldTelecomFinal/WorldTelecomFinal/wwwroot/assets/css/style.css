@@ -106,11 +106,11 @@ header .h-bottom-color .h-bottom .companies button:hover {
 }
 header .h-bottom-color .h-bottom .companies .companies-icons {
   display: flex;
-  padding: 15px;
+  padding: 0px 15px;
   margin-left: 20px;
 }
 header .h-bottom-color .h-bottom .companies .companies-icons .ico1 {
-  padding: 4px 0px;
+  padding: 15px 0px;
 }
 header .h-bottom-color .h-bottom .companies .companies-icons .ico1 .drop2 {
   padding: 10px;
@@ -132,8 +132,19 @@ header .h-bottom-color .h-bottom .companies .companies-icons .ico1 .drop2 .qeydi
   border: 1px solid rgb(114, 170, 29);
 }
 header .h-bottom-color .h-bottom .companies .companies-icons .ico2 {
-  padding: 4px 0px;
+  padding: 15px 0px;
 }
+header .h-bottom-color .h-bottom .companies .companies-icons .ico3 {
+  padding: 15px 0px;
+}
+
+    header .h-bottom-color .h-bottom .companies .companies-icons .ico3 img {
+        width:24px;
+        height:24px;
+    }
+
+
+
 header .h-bottom-color .h-bottom .companies .companies-icons img {
   margin: 0px 10px;
 }

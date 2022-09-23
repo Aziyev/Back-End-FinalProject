@@ -47,8 +47,15 @@ using WorldTelecomFinal.ViewModels;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 7 "C:\Users\aziye\Desktop\Back-End-FinalProject\WorldTelecomFinal\WorldTelecomFinal\Areas\Manage\Views\_ViewImports.cshtml"
+using WorldTelecomFinal.Areas.Manage.ViewModels.AccountViewModel;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7bd1c7aa50a26cda62214b4678f48e9bc8345ba3", @"/Areas/Manage/Views/Shared/_BrandIndexPartial.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9e0690fa4bb16ac2f1c493570dba1803a5c15508", @"/Areas/Manage/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"61a0aabe097f4a04bd1aed1ea2dfe667b0b499a9", @"/Areas/Manage/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Areas_Manage_Views_Shared__BrandIndexPartial : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<PageNatedList<Brand>>
     #nullable disable
@@ -162,7 +169,7 @@ WriteAttributeValue("", 789, brand.IsDeleted ? "red" : "green", 789, 36, false);
                             </button>
                             <div class=""dropdown-menu"">
                               ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd1c7aa50a26cda62214b4678f48e9bc8345ba39921", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd1c7aa50a26cda62214b4678f48e9bc8345ba310188", async() => {
                 WriteLiteral("<i class=\"bx bx-edit-alt me-1\"></i> Update");
             }
             );
@@ -207,7 +214,7 @@ WriteAttributeValue("", 789, brand.IsDeleted ? "red" : "green", 789, 36, false);
 #line hidden
 #nullable disable
             WriteLiteral("                                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd1c7aa50a26cda62214b4678f48e9bc8345ba313093", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd1c7aa50a26cda62214b4678f48e9bc8345ba313361", async() => {
                 WriteLiteral("<i class=\"bx bx-trash me-1\"></i> Restore");
             }
             );
@@ -264,7 +271,7 @@ WriteAttributeValue("", 789, brand.IsDeleted ? "red" : "green", 789, 36, false);
 #line hidden
 #nullable disable
             WriteLiteral("                                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd1c7aa50a26cda62214b4678f48e9bc8345ba317181", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd1c7aa50a26cda62214b4678f48e9bc8345ba317449", async() => {
                 WriteLiteral("<i class=\"bx bx-trash me-1\"></i> Delete");
             }
             );

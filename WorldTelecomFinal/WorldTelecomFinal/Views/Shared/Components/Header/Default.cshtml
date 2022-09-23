@@ -75,14 +75,23 @@
                             <div class="ico1 dropdown">
                                 <img src="~/assets/img/header-icons/login1.svg" alt="">
                                 <div class="dropdown-content drop2">
-                                    <p>Daha yaxşı təkliflər üçün hesabınıza giriş edin.</p>
-                                    <a href="./giris.html"><button class="giris">  
-                                        Giris
+                                    
+                                @if (User.Identity.IsAuthenticated)
+                                {
+                                     <a><p>@User.Identity.Name</p></a>
+                                     <a asp-controller="account" asp-action="logout"><button class="giris">
+                                        Logout
                                     </button></a>
-                                    <a href="./giris.html"><button class="giris">
+                                }else
+                                {
+                                      <a asp-controller="account" asp-action="register" ><button class="giris">  
                                         Qeydiyyat
                                     </button></a>
-                                  </div>
+                                    <a asp-controller="account" asp-action="login"><button class="giris">
+                                        Giris
+                                    </button></a>
+                                }
+                            </div>
                             </div>
                             <a asp-controller="favorites" asp-action="index"><div class="ico2">
                                 <img src="~/assets/img/header-icons/lovewhite.svg" alt="">

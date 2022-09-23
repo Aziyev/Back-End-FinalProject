@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -12,6 +13,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using WorldTelecomFinal.DAL;
 using WorldTelecomFinal.Interfaces;
+using WorldTelecomFinal.Models;
 using WorldTelecomFinal.Services;
 
 namespace WorldTelecomFinal
@@ -35,11 +37,26 @@ namespace WorldTelecomFinal
             });
             services.AddDbContext<AppDbContext>(options=>options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
+            services.AddIdentity<AppUser, IdentityRole>(options => {
+                
+                options.User.RequireUniqueEmail = true;
+
+                options.Password.RequireDigit = true;
+                options.Password.RequiredLength = 8;
+                options.Password.RequireLowercase = true;
+                options.Password.RequireNonAlphanumeric = true;
+                options.Password.RequireUppercase = true;
+
+                options.Lockout.AllowedForNewUsers = true;
+                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(10);
+                options.Lockout.MaxFailedAccessAttempts = 3;
+
+            }).AddDefaultTokenProviders().AddEntityFrameworkStores<AppDbContext>();
+
             services.AddSession(options=>
             {
                 options.IdleTimeout = TimeSpan.FromSeconds(5);
-            }
-                );
+            });
 
             //singleton//transinet
             //Singleton Error cixardi! 
@@ -63,6 +80,8 @@ namespace WorldTelecomFinal
 
             app.UseStaticFiles();
 
+            app.UseAuthentication();
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {

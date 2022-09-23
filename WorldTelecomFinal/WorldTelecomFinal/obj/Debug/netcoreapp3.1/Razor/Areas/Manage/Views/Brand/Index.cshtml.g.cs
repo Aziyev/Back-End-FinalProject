@@ -47,8 +47,15 @@ using WorldTelecomFinal.ViewModels;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 7 "C:\Users\aziye\Desktop\Back-End-FinalProject\WorldTelecomFinal\WorldTelecomFinal\Areas\Manage\Views\_ViewImports.cshtml"
+using WorldTelecomFinal.Areas.Manage.ViewModels.AccountViewModel;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"98549f867a78c838db8b12b288227a6fe0c8a69e", @"/Areas/Manage/Views/Brand/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9e0690fa4bb16ac2f1c493570dba1803a5c15508", @"/Areas/Manage/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"61a0aabe097f4a04bd1aed1ea2dfe667b0b499a9", @"/Areas/Manage/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Areas_Manage_Views_Brand_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<PageNatedList<Brand>>
     #nullable disable
@@ -115,7 +122,7 @@ using WorldTelecomFinal.ViewModels;
 
                 <div style=""text-align:center;"" >
                     ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "98549f867a78c838db8b12b288227a6fe0c8a69e9090", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "98549f867a78c838db8b12b288227a6fe0c8a69e9357", async() => {
                 WriteLiteral(@"
                         <div>
                             <label style=""font-weight:700; padding-right:10px; font-size:20px;"" class=""col-form-label"" >Brand Status Choose</label>
@@ -131,7 +138,7 @@ using WorldTelecomFinal.ViewModels;
 #line hidden
 #nullable disable
                 WriteLiteral("                                ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "98549f867a78c838db8b12b288227a6fe0c8a69e10066", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "98549f867a78c838db8b12b288227a6fe0c8a69e10333", async() => {
                     WriteLiteral("All");
                 }
                 );
@@ -161,7 +168,7 @@ using WorldTelecomFinal.ViewModels;
 #line hidden
 #nullable disable
                 WriteLiteral("                                ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "98549f867a78c838db8b12b288227a6fe0c8a69e12060", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "98549f867a78c838db8b12b288227a6fe0c8a69e12327", async() => {
                     WriteLiteral("All");
                 }
                 );
@@ -195,7 +202,7 @@ using WorldTelecomFinal.ViewModels;
 #line hidden
 #nullable disable
                 WriteLiteral("                                ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "98549f867a78c838db8b12b288227a6fe0c8a69e13990", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "98549f867a78c838db8b12b288227a6fe0c8a69e14257", async() => {
                     WriteLiteral("Deleted");
                 }
                 );
@@ -225,7 +232,7 @@ using WorldTelecomFinal.ViewModels;
 #line hidden
 #nullable disable
                 WriteLiteral("                                ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "98549f867a78c838db8b12b288227a6fe0c8a69e15988", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "98549f867a78c838db8b12b288227a6fe0c8a69e16255", async() => {
                     WriteLiteral("Deleted");
                 }
                 );
@@ -260,7 +267,7 @@ using WorldTelecomFinal.ViewModels;
 #line hidden
 #nullable disable
                 WriteLiteral("                                ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "98549f867a78c838db8b12b288227a6fe0c8a69e17955", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "98549f867a78c838db8b12b288227a6fe0c8a69e18222", async() => {
                     WriteLiteral("NotDeleted");
                 }
                 );
@@ -290,7 +297,7 @@ using WorldTelecomFinal.ViewModels;
 #line hidden
 #nullable disable
                 WriteLiteral("                                ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "98549f867a78c838db8b12b288227a6fe0c8a69e19956", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "98549f867a78c838db8b12b288227a6fe0c8a69e20223", async() => {
                     WriteLiteral("NotDeleted");
                 }
                 );
@@ -329,7 +336,7 @@ using WorldTelecomFinal.ViewModels;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                </div>\r\n\r\n                <div style=\"text-align:end;\">\r\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "98549f867a78c838db8b12b288227a6fe0c8a69e22776", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "98549f867a78c838db8b12b288227a6fe0c8a69e23043", async() => {
                 WriteLiteral("\r\n                        Create\r\n                        ");
             }
             );
@@ -367,7 +374,7 @@ using WorldTelecomFinal.ViewModels;
 #line hidden
 #nullable disable
             WriteLiteral("                <div>");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "98549f867a78c838db8b12b288227a6fe0c8a69e25418", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "98549f867a78c838db8b12b288227a6fe0c8a69e25685", async() => {
                 WriteLiteral(" ");
 #nullable restore
 #line 75 "C:\Users\aziye\Desktop\Back-End-FinalProject\WorldTelecomFinal\WorldTelecomFinal\Areas\Manage\Views\Brand\Index.cshtml"
@@ -417,7 +424,7 @@ using WorldTelecomFinal.ViewModels;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</div>\r\n                <div>");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "98549f867a78c838db8b12b288227a6fe0c8a69e29305", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "98549f867a78c838db8b12b288227a6fe0c8a69e29572", async() => {
                 WriteLiteral(" ");
 #nullable restore
 #line 76 "C:\Users\aziye\Desktop\Back-End-FinalProject\WorldTelecomFinal\WorldTelecomFinal\Areas\Manage\Views\Brand\Index.cshtml"
@@ -489,7 +496,7 @@ using WorldTelecomFinal.ViewModels;
 #line hidden
 #nullable disable
             WriteLiteral("                <div>");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "98549f867a78c838db8b12b288227a6fe0c8a69e34160", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "98549f867a78c838db8b12b288227a6fe0c8a69e34427", async() => {
                 WriteLiteral(" ");
 #nullable restore
 #line 81 "C:\Users\aziye\Desktop\Back-End-FinalProject\WorldTelecomFinal\WorldTelecomFinal\Areas\Manage\Views\Brand\Index.cshtml"
@@ -560,7 +567,7 @@ using WorldTelecomFinal.ViewModels;
 #line hidden
 #nullable disable
             WriteLiteral("                <div>");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "98549f867a78c838db8b12b288227a6fe0c8a69e38950", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "98549f867a78c838db8b12b288227a6fe0c8a69e39217", async() => {
                 WriteLiteral(" ");
 #nullable restore
 #line 85 "C:\Users\aziye\Desktop\Back-End-FinalProject\WorldTelecomFinal\WorldTelecomFinal\Areas\Manage\Views\Brand\Index.cshtml"
@@ -615,7 +622,7 @@ using WorldTelecomFinal.ViewModels;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</div>\r\n                <div>");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "98549f867a78c838db8b12b288227a6fe0c8a69e43271", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "98549f867a78c838db8b12b288227a6fe0c8a69e43538", async() => {
                 WriteLiteral(" ");
 #nullable restore
 #line 86 "C:\Users\aziye\Desktop\Back-End-FinalProject\WorldTelecomFinal\WorldTelecomFinal\Areas\Manage\Views\Brand\Index.cshtml"

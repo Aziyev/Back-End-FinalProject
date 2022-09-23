@@ -1,0 +1,49 @@
+﻿@model RegisterVM
+@{
+    ViewData["Title"] = "Register";
+}
+
+
+ <section class="register-area pt-10">
+    <div class="container">
+        <div style="justify-content:center; text-align:center;">
+            <div class="col-lg-12" >
+                <div class="login-register-wrapper" style="margin:60px 0px;padding:20px; background-color:#383E42;border-radius:10px;">
+                    <h4 class="WTLCM-title" style="color:white;">Yeni Akkount Yarat</h4>
+                    <p style="margin-top:10px; color:white;">Artiq Varindi? <a style="color:green;" asp-controller="account" asp-action="login">Daxil Ol!</a></p>
+                    <div class="text text-danger" asp-validation-summary="ModelOnly"></div>
+                    <form method="post">
+                        <div class="single-form" style="margin-top:10px;padding:10px;">
+                            <input asp-for="Name" placeholder="First Name" style="padding:10px; width:400px; font-size:16px; border-radius:5px;">
+                            <span class="text text-danger" asp-validation-for="Name"></span>
+                        </div>
+                        <div class="single-form" style="margin-top:10px;padding:10px;">
+                            <input asp-for="SurName" placeholder="Last Name" style="padding:10px; width:400px; font-size:16px; border-radius:5px;">
+                            <span class="text text-danger" asp-validation-for="SurName"></span>
+                        </div>
+                        <div class="single-form" style="margin-top:10px;padding:10px;">
+                            <input asp-for="Email" placeholder="Email Address" style="padding:10px; width:400px; font-size:16px; border-radius:5px;">
+                            <span class="text text-danger" asp-validation-for="Email"></span>
+                        </div>
+                        <div class="single-form" style="margin-top:10px;padding:10px;">
+                            <input asp-for="UserName" placeholder="Username" style="padding:10px; width:400px; font-size:16px; border-radius:5px;">
+                            <span class="text text-danger" asp-validation-for="UserName"></span>
+                        </div>
+                        <div class="single-form" style="margin-top:10px;padding:10px;">
+                            <input asp-for="Password" placeholder="Password" style="padding:10px; width:400px; font-size:16px; border-radius:5px;">
+                            <span class="text text-danger" asp-validation-for="Password"></span>
+                        </div>
+                        <div class="single-form" style="margin-top:10px;padding:10px;">
+                            <input asp-for="ConfirmPasword" placeholder="Confirm Password" style="padding:10px; width:400px; font-size:16px; border-radius:5px;">
+                            <span class="text text-danger" asp-validation-for="ConfirmPasword"></span>
+                        </div>
+                        <div class="single-form" style="margin-top:10px;padding:10px;">
+                            <button class="main-btn main-btn-2" style="padding:5px 15px;border-radius:10px;">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
